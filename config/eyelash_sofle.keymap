@@ -45,9 +45,9 @@
             bindings = <
 &kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7     &kp N8     &kp N9           &kp N0      &kp BACKSPACE
 &kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U      &kp I      &kp O            &kp P       &kp BSLH
-&lt 6 CAPSLOCK  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
+&lt 1 CAPSLOCK  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J      &kp K      &kp L            &kp SEMI    &kp APOS
 &kp LSHFT       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M      &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 6   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 7      &kp RIGHT_SHIFT  &kp DELETE
+&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &kp ENTER  &mo 7      &kp RIGHT_SHIFT  &kp DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -57,11 +57,11 @@
 
         Layer3 {
             bindings = <
-&kp ESC  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp F1     &kp F2          &kp F3             &kp F4           &kp F5                 &kp F6           &trans  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&kp GRAVE  &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans     &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &trans           &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans     &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &trans           &trans  &trans  &trans  &trans  &trans   &trans   &trans
+&trans     &trans          &trans             &trans           &trans                 &trans           &trans  &trans  &trans  &trans  &trans   &trans
             >;
 
             label = "Layer3";
@@ -81,11 +81,11 @@
 
         Layer5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
             >;
 
             label = "Layer5";
@@ -93,11 +93,11 @@
 
         Layer6 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q
             >;
 
             label = "Layer6";

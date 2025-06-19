@@ -18,6 +18,7 @@
     acceleration-exponent = <1>;      // 0
     time-to-max-speed-ms = <100>;       // 300
     delay-ms = <0>;                   // 0
+    trigger-period-ms = <0>;
 };
 
 &mmv {
@@ -39,7 +40,7 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TAP_DANCE";
         #binding-cells = <0>;
-        tapping-term-ms = <200>;
+        tapping-term-ms = <500>;
         bindings =
             <&to 0>,
             <&to 1>,
@@ -56,13 +57,13 @@
     keymap {
         compatible = "zmk,keymap";
 
-        QWERTy {
+        QWERTY {
             bindings = <
-&kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7         &kp N8     &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U          &kp I      &kp O            &kp P       &kp BSLH
-&lt 2 CAPSLOCK  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J          &kp K      &kp L            &kp SEMI    &kp APOS
-&kp LSHFT       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA  &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 1   &kp SPACE    &kp ENTER        &kp SPACE  &kp RIGHT_ALT  &mo 2      &kp RIGHT_SHIFT  &tap_dance
+&kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8         &kp N9           &kp N0      &kp BACKSPACE
+&kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O            &kp P       &kp BSLH
+&lt 1 CAPSLOCK  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L            &kp SEMI    &kp APOS
+&kp LSHFT       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT          &kp FSLH    &kp ENTER
+&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 2   &kp SPACE    &kp ENTER        &kp SPACE  &mo 2   &kp RIGHT_ALT  &kp RIGHT_SHIFT  &tap_dance
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -72,11 +73,11 @@
 
         Special {
             bindings = <
-&kp GRAVE  &kp K_VOLUME_DOWN  &kp K_MUTE         &kp K_VOLUME_DOWN  &trans                 &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp DELETE         &msc SCRL_UP       &kp BACKSPACE      &kp LC(N0)             &kp LC(LS(T))    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_RIGHT    &kp LC(K_SCROLL_UP)    &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &kp LC(PG_UP)      &kp LC(PAGE_DOWN)  &kp LC(W)          &kp LC(K_SCROLL_DOWN)  &trans           &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans     &trans             &trans             &trans             &trans                 &trans           &trans  &trans  &trans  &trans  &trans  &trans
+&kp GRAVE  &kp K_VOLUME_DOWN  &kp K_MUTE         &kp K_VOLUME_DOWN  &none                  &none            &none  &none  &none  &none  &none  &none   &none
+&none      &kp DELETE         &msc SCRL_UP       &kp BACKSPACE      &kp LC(N0)             &kp LC(LS(T))    &none  &none  &none  &none  &none  &none   &none
+&none      &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_RIGHT    &kp LC(K_SCROLL_UP)    &none            &none  &none  &none  &none  &none  &none   &none
+&none      &kp LC(PG_UP)      &kp LC(PAGE_DOWN)  &kp LC(W)          &kp LC(K_SCROLL_DOWN)  &none            &none  &none  &none  &none  &none  &none   &none
+&none      &none              &none              &none              &none                  &none            &none  &none  &none  &none  &none  &trans
             >;
 
             label = "Special";
@@ -84,11 +85,11 @@
 
         Fs {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7  &kp F8          &kp F9        &kp F10    &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans        &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &kp UP_ARROW  &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN      &kp RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans        &trans     &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7  &kp F8          &kp F9          &kp F10    &kp F11  &kp F12
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &kp UP          &trans     &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT        &kp DOWN_ARROW  &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT  &trans   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans     &trans
             >;
 
             label = "Fs";
@@ -110,11 +111,11 @@
 
         Layer6 {
             bindings = <
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q       &kp Q
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q       &kp Q
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q       &kp Q
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q       &kp Q
-&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &tap_dance
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q   &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q   &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q   &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q   &kp Q
+&kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &kp Q    &kp Q  &kp Q  &kp Q  &kp Q  &kp Q  &trans
             >;
 
             label = "Layer6";
@@ -122,11 +123,11 @@
 
         RGB {
             bindings = <
-&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &kp F6           &kp F7           &kp F8      &kp F9     &kp F10           &trans
-&trans      &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&trans      &kp TILDE        &trans          &trans           &trans           &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-&trans      &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &trans
-&kp C_MUTE  &trans           &trans          &trans           &trans           &trans             &mkp LCLK        &trans           &trans           &trans      &trans     &trans
+&kp GRAVE   &kp F1           &kp F2          &kp F3           &kp F4           &kp F5             &mmv MOVE_UP     &none            &kp F7           &kp F8      &kp F9     &kp F10           &none
+&none       &kp GRAVE        &mkp LCLK       &mkp MCLK        &mkp RCLK        &mkp MB4           &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&none       &kp TILDE        &none           &none            &none            &mkp MB5           &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none       &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &none
+&kp C_MUTE  &none            &none           &none            &none            &none              &mkp LCLK        &none            &none            &none       &none      &trans
             >;
 
             display-name = "RGB";
@@ -135,11 +136,11 @@
 
         Bluetooth {
             bindings = <
-&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &trans
-&trans     &bt BT_CLR    &bt BT_CLR_ALL  &trans        &trans        &trans          &mmv MOVE_DOWN   &trans  &trans  &kp F11     &kp F12    &kp UNDER    &kp PLUS
-&trans     &out OUT_USB  &out OUT_BLE    &trans        &trans        &trans          &mmv MOVE_LEFT   &trans  &trans  &trans      &trans     &kp LBRC     &kp RBRC
-&trans     &sys_reset    &trans          &bootloader   &trans        &trans          &mmv MOVE_RIGHT  &trans  &trans  &sys_reset  &soft_off  &bootloader  &trans
-&trans     &trans        &trans          &trans        &trans        &trans          &mkp LCLK        &trans  &trans  &trans      &trans     &trans
+&kp TILDE  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &mmv MOVE_UP     &kp F6  &kp F7  &kp F8      &kp F9     &kp F10      &none
+&none      &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none           &mmv MOVE_DOWN   &none   &none   &kp F11     &kp F12    &kp UNDER    &kp PLUS
+&none      &out OUT_USB  &out OUT_BLE    &none         &none         &none           &mmv MOVE_LEFT   &none   &none   &none       &none      &kp LBRC     &kp RBRC
+&none      &sys_reset    &none           &bootloader   &none         &none           &mmv MOVE_RIGHT  &none   &none   &sys_reset  &soft_off  &bootloader  &none
+&none      &none         &none           &none         &none         &none           &mkp LCLK        &none   &none   &none       &none      &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;

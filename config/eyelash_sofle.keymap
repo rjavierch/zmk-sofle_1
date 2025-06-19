@@ -73,11 +73,11 @@
 
         Special {
             bindings = <
-&kp GRAVE  &kp K_VOLUME_DOWN  &kp K_MUTE         &kp K_VOLUME_DOWN  &none                  &none            &none  &none  &none  &none  &none  &none   &none
-&none      &kp DELETE         &msc SCRL_UP       &kp BACKSPACE      &kp LC(N0)             &kp LC(LS(T))    &none  &none  &none  &none  &none  &none   &none
-&none      &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_RIGHT    &kp LC(K_SCROLL_UP)    &none            &none  &none  &none  &none  &none  &none   &none
-&none      &kp LC(PG_UP)      &kp LC(PAGE_DOWN)  &kp LC(W)          &kp LC(K_SCROLL_DOWN)  &none            &none  &none  &none  &none  &none  &none   &none
-&none      &none              &none              &none              &none                  &none            &none  &none  &none  &none  &none  &trans
+&kp GRAVE  &kp K_VOLUME_DOWN  &kp K_MUTE         &kp K_VOLUME_DOWN  &none                  &none            &none  &none  &none  &none  &none             &none              &none
+&none      &kp DELETE         &msc SCRL_UP       &kp BACKSPACE      &kp LC(N0)             &kp LC(LS(T))    &none  &none  &none  &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none      &msc SCRL_LEFT     &msc SCRL_DOWN     &msc SCRL_RIGHT    &kp LC(K_SCROLL_UP)    &none            &none  &none  &none  &none  &none             &none              &none
+&none      &kp LC(PG_UP)      &kp LC(PAGE_DOWN)  &kp LC(W)          &kp LC(K_SCROLL_DOWN)  &none            &none  &none  &none  &none  &none             &none              &none
+&none      &none              &none              &none              &none                  &none            &none  &none  &none  &none  &none             &trans
             >;
 
             label = "Special";
@@ -85,11 +85,11 @@
 
         Fs {
             bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &trans  &kp F7  &kp F8          &kp F9          &kp F10    &kp F11  &kp F12
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &kp UP          &trans     &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT        &kp DOWN_ARROW  &kp RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &kp LEFT_ARROW  &kp DOWN        &kp RIGHT  &trans   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans          &trans          &trans     &trans
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &none  &kp F7  &kp F8    &kp F9          &kp F10    &kp F11  &kp F12
+&none   &none   &none   &none   &none   &none     &none  &none   &none     &kp UP          &none      &none    &none
+&none   &none   &none   &none   &none   &none     &none  &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none    &none
+&none   &none   &none   &none   &none   &none     &none  &none   &none     &none           &none      &none    &none
+&none   &none   &none   &none   &none   &none     &none  &none   &none     &none           &none      &trans
             >;
 
             label = "Fs";

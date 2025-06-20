@@ -15,10 +15,7 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    acceleration-exponent = <0>;      // 0
-    time-to-max-speed-ms = <100>;       // 300
-    delay-ms = <0>;                   // 0
-    trigger-period-ms = <0>;
+    time-to-max-speed-ms = <100>;       // 300                   // 0
 };
 
 &mmv {
@@ -124,8 +121,8 @@
         RGB {
             bindings = <
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &mmv MOVE_UP     &none            &kp F7           &kp F8      &kp F9     &kp F10           &none
-&none            &bt BT_CLR            &bt BT_CLR_ALL           &none            &none            &none              &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
-&none            &out OUT_USB            &out OUT_BLE           &none            &none            &none              &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&none            &bt BT_CLR       &bt BT_CLR_ALL  &none            &none            &none              &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
+&none            &out OUT_USB     &out OUT_BLE    &none            &none            &none              &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &rgb_ug RGB_TOG  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &none
 &kp C_MUTE       &none            &none           &none            &none            &none              &mkp LCLK        &none            &none            &none       &none      &trans
             >;

@@ -70,7 +70,7 @@
 
         Special {
             bindings = <
-&kp GRAVE  &kp C_VOL_DN    &kp C_MUTE         &kp C_VOLUME_UP  &none                  &none            &none  &none  &none     &kp MINUS       &kp EQUAL  &none      &none
+&kp GRAVE  &kp C_VOL_DN    &kp C_MUTE         &kp C_VOLUME_UP  &none                  &none            &none  &none  &none     &kp MINUS       &kp EQUAL  &none      &kp DEL
 &none      &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &none  &none     &kp LBKT        &kp RBKT   &kp RSHFT  &none
 &none      &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &none  &none     &kp UP_ARROW    &none      &none      &none
 &none      &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none      &none

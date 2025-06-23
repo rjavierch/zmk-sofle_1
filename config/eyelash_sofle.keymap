@@ -48,6 +48,24 @@
             <&to 6>;
     };
 
+    motap: motap {
+        compatible = "zmk,behavior-hold-tap";
+        label = "MOTAP";
+        bindings = <&lt>, <&tap_dance>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+    };
+
+    twokeys: twokeys {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TWOKEYS";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+    };
+
     behaviors {
     };
 
@@ -56,11 +74,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &kp UP_ARROW     &kp N6     &kp N7  &kp N8         &kp N9           &kp N0      &kp BACKSPACE
-&kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &kp DOWN_ARROW   &kp Y      &kp U   &kp I          &kp O            &kp P       &kp BSLH
-&lt 1 CAPSLOCK  &kp A      &kp S         &kp D         &kp F   &kp G        &kp LEFT_ARROW   &kp H      &kp J   &kp K          &kp L            &kp SEMI    &kp APOS
-&kp LSHFT       &kp Z      &kp X         &kp C         &kp V   &kp B        &kp RIGHT_ARROW  &kp N      &kp M   &kp COMMA      &kp DOT          &kp FSLH    &kp ENTER
-&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 2   &kp SPACE    &kp ENTER        &kp SPACE  &mo 1   &kp RIGHT_ALT  &kp RIGHT_SHIFT  &tap_dance
+&kp ESC         &kp N1     &kp N2        &kp N3        &kp N4     &kp N5    &kp UP_ARROW     &kp N6      &kp N7     &kp N8         &kp N9      &kp N0           &kp BACKSPACE
+&kp TAB         &kp Q      &kp W         &kp E         &kp R      &kp T     &kp DOWN_ARROW   &kp Y       &kp U      &kp I          &kp O       &kp P            &kp BSLH
+&lt 1 CAPSLOCK  &kp A      &kp S         &kp D         &kp F      &kp G     &kp LEFT_ARROW   &kp H       &kp J      &kp K          &kp L       &kp SEMI         &kp APOS
+&kp LSHFT       &kp Z      &kp X         &kp C         &kp V      &kp B     &kp RIGHT_ARROW  &kp N       &kp M      &kp COMMA      &kp DOT     &kp FSLH         &kp ENTER
+&kp C_MUTE      &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &kp SPACE  &mo 2     &kp ENTER        &motap 2 0  &kp SPACE  &kp RIGHT_ALT  &tap_dance  &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -70,11 +88,11 @@
 
         Special {
             bindings = <
-&kp GRAVE  &kp C_VOL_DN    &kp C_MUTE         &kp C_VOLUME_UP  &none                  &none            &none  &none  &none     &kp MINUS       &kp EQUAL  &none      &kp DEL
-&none      &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &none  &none     &kp LBKT        &kp RBKT   &kp RSHFT  &none
-&none      &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &none  &none     &kp UP_ARROW    &none      &none      &none
-&none      &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &none  &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none      &none
-&none      &none           &none              &none            &none                  &none            &none  &none  &none     &none           &none      &trans
+&kp GRAVE  &kp C_VOL_DN    &kp C_MUTE         &kp C_VOLUME_UP  &none                  &none            &none  &kp MINUS       &kp UNDER        &none           &kp EQUAL         &kp PLUS           &kp DEL
+&none      &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP_ARROW    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none      &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &none           &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW   &none              &none
+&none      &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &none           &none            &none           &none             &none              &none
+&none      &none           &none              &none            &none                  &none            &none  &none           &none            &none           &trans            &none
             >;
 
             label = "Special";
@@ -86,7 +104,7 @@
 &none   &none   &none   &none   &none   &none     &none  &none   &none     &kp UP          &none      &none    &none
 &none   &none   &none   &none   &none   &none     &none  &none   &kp LEFT  &kp DOWN_ARROW  &kp RIGHT  &none    &none
 &none   &none   &none   &none   &none   &none     &none  &none   &none     &none           &none      &none    &none
-&none   &none   &none   &none   &none   &none     &none  &none   &none     &none           &none      &trans
+&none   &none   &none   &none   &none   &none     &none  &none   &none     &none           &trans     &none
             >;
 
             label = "Fs";
@@ -96,11 +114,11 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&kp ESC       &kp N1     &kp N2             &kp N3        &kp N4         &kp N5       &kp UP_ARROW     &kp N6     &kp N7         &kp N8     &kp N9           &kp N0    &kp BACKSPACE
-&kp TAB       &kp Q      &kp W              &kp E         &kp R          &kp T        &kp DOWN_ARROW   &kp Y      &kp U          &kp I      &kp O            &kp P     &kp BSLH
-&kp CAPSLOCK  &kp A      &kp S              &kp D         &kp F          &kp G        &kp LEFT_ARROW   &kp H      &kp J          &kp K      &kp L            &kp SEMI  &kp APOS
-&kp LSHFT     &kp Z      &kp X              &kp C         &kp V          &kp B        &kp RIGHT_ARROW  &kp N      &kp M          &kp COMMA  &kp DOT          &kp FSLH  &kp ENTER
-&kp C_MUTE    &kp LCTRL  &kp RIGHT_CONTROL  &kp LEFT_ALT  &kp RIGHT_ALT  &kp SPACE    &kp ENTER        &kp SPACE  &kp RIGHT_ALT  &none      &kp RIGHT_SHIFT  &trans
+&kp ESC       &kp N1        &kp N2         &kp N3     &kp N4     &kp N5    &kp UP_ARROW     &kp N6      &kp N7     &kp N8         &kp N9   &kp N0           &kp BACKSPACE
+&kp TAB       &kp Q         &kp W          &kp E      &kp R      &kp T     &kp DOWN_ARROW   &kp Y       &kp U      &kp I          &kp O    &kp P            &kp BSLH
+&kp CAPSLOCK  &kp A         &kp S          &kp D      &kp F      &kp G     &kp LEFT_ARROW   &kp H       &kp J      &kp K          &kp L    &kp SEMI         &kp APOS
+&kp LSHFT     &kp Z         &kp X          &kp C      &kp V      &kp B     &kp RIGHT_ARROW  &kp N       &kp M      &kp COMMA      &kp DOT  &kp FSLH         &kp ENTER
+&kp C_MUTE    &kp LEFT_ALT  &kp RIGHT_ALT  &kp SPACE  &kp SPACE  &kp N0    &kp ENTER        &motap 2 0  &kp SPACE  &kp RIGHT_ALT  &trans   &kp RIGHT_SHIFT
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOL_DN>;
@@ -108,11 +126,11 @@
 
         Extra {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none   &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none   &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none   &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none   &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &trans
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &trans  &none
             >;
 
             label = "Extra";
@@ -124,7 +142,7 @@
 &none            &bt BT_CLR       &bt BT_CLR_ALL  &none            &none            &none              &mmv MOVE_DOWN   &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
 &none            &out OUT_USB     &out OUT_BLE    &none            &none            &none              &mmv MOVE_LEFT   &kp PG_DN        &kp LEFT         &kp DOWN    &kp RIGHT  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
 &rgb_ug RGB_TOG  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &rgb_ug RGB_EFF  &rgb_ug RGB_EFR  &rgb_ug RGB_SPI    &mmv MOVE_RIGHT  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp INSERT  &kp F11    &kp F12           &none
-&kp C_MUTE       &none            &none           &none            &none            &none              &mkp LCLK        &none            &none            &none       &none      &trans
+&kp C_MUTE       &none            &none           &none            &none            &none              &mkp LCLK        &none            &none            &none       &trans     &none
             >;
 
             display-name = "RGB";
@@ -137,7 +155,7 @@
 &none      &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none           &mmv MOVE_DOWN   &none   &none   &kp F11     &kp F12    &kp UNDER    &kp PLUS
 &none      &out OUT_USB  &out OUT_BLE    &none         &none         &none           &mmv MOVE_LEFT   &none   &none   &none       &none      &kp LBRC     &kp RBRC
 &none      &sys_reset    &none           &bootloader   &none         &none           &mmv MOVE_RIGHT  &none   &none   &sys_reset  &soft_off  &bootloader  &none
-&none      &none         &none           &none         &none         &none           &mkp LCLK        &none   &none   &none       &none      &trans
+&none      &none         &none           &none         &none         &none           &mkp LCLK        &none   &none   &none       &trans     &none
             >;
 
             sensor-bindings = <&scroll_encoder>;

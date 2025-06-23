@@ -62,7 +62,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '&tap_dance', h: '&lt 2'}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: RIGHT GUI, h: '$$mdi:apple-keyboard-option$$'}
   - '&tap_dance'
   - $$mdi:apple-keyboard-shift$$
   Special:
@@ -257,7 +257,7 @@ layers:
   - {t: '$$mdi:keyboard-return$$', type: enter}
   - {t: '&tap_dance', h: '&lt 2'}
   - $$mdi:keyboard-space$$
-  - $$mdi:apple-keyboard-option$$
+  - {t: RIGHT GUI, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:transfer$$', type: trans}
   - $$mdi:apple-keyboard-shift$$
   Extra:

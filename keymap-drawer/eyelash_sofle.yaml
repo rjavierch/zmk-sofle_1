@@ -64,7 +64,7 @@ layers:
   - Special
   - {t: RIGHT GUI, h: '$$mdi:apple-keyboard-option$$'}
   - '&tap_dance'
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   Special:
   - {t: '`', s: '~'}
   - $$mdi:volume-low$$
@@ -259,7 +259,7 @@ layers:
   - Special
   - {t: RIGHT GUI, h: '$$mdi:apple-keyboard-option$$'}
   - {t: '$$mdi:transfer$$', type: trans}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:apple-keyboard-shift$$
   Extra:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

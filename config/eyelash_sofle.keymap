@@ -39,23 +39,13 @@
         #binding-cells = <0>;
         tapping-term-ms = <500>;
         bindings =
-            <&to 0>,
-            <&to 2>,
-            <&to 3>,
-            <&to 1>,
-            <&to 4>,
-            <&to 5>,
-            <&to 6>;
-    };
-
-    motap: motap {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MOTAP";
-        bindings = <&lt>, <&tap_dance>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        flavor = "balanced";
+            <&tog 0>,
+            <&tog 2>,
+            <&tog 3>,
+            <&tog 1>,
+            <&tog 4>,
+            <&tog 5>,
+            <&tog 6>;
     };
 
     twokeys: twokeys {

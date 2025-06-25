@@ -57,7 +57,6 @@
         tapping-term-ms = <200>;
         flavor = "tap-unless-interrupted";
         hold-while-undecided;
-        quick-tap-ms = <200>;
     };
 
     tapdancekeys: tapdancekeys {
@@ -88,7 +87,6 @@
         tapping-term-ms = <200>;
         flavor = "tap-unless-interrupted";
         hold-while-undecided;
-        quick-tap-ms = <200>;
     };
 
     behaviors {

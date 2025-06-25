@@ -63,7 +63,7 @@ layers:
   - $$mdi:keyboard-space$$
   - Special
   - {t: RIGHT GUI, h: '$$mdi:apple-keyboard-option$$'}
-  - '&tap_dance'
+  - '&tapdance'
   - $$mdi:apple-keyboard-shift$$
   Game:
   - $$mdi:keyboard-esc$$

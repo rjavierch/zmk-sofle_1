@@ -39,13 +39,13 @@
         #binding-cells = <0>;
         tapping-term-ms = <500>;
         bindings =
-            <&togmod 0>,
-            <&togmod 3>,
-            <&togmod 2>,
-            <&togmod 4>,
-            <&togmod 4>,
-            <&togmod 5>,
-            <&tog 6>;
+            <&to 0>,
+            <&to 1>,
+            <&to 2>,
+            <&to 3>,
+            <&to 4>,
+            <&to 5>,
+            <&to 6>;
     };
 
     twokeys: twokeys {
@@ -57,13 +57,6 @@
         tapping-term-ms = <200>;
         flavor = "tap-unless-interrupted";
         hold-while-undecided;
-    };
-
-    togmod: togmod {
-        compatible = "zmk,behavior-toggle-layer";
-        label = "TOGMOD";
-        #binding-cells = <1>;
-        toggle-mode = "off";
     };
 
     behaviors {

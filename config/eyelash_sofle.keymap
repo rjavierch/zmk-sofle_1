@@ -64,9 +64,31 @@
         compatible = "zmk,behavior-tap-dance";
         label = "TAPDANCEKEYS";
         #binding-cells = <0>;
-        bindings = <&kp LEFT_SHIFT>, <&kp LEFT_CONTROL>;
+        bindings = <&kp LEFT_CONTROL>, <&kp LEFT_SHIFT>;
 
         tapping-term-ms = <200>;
+    };
+
+    modenter: modenter {
+        compatible = "zmk,behavior-mod-morph";
+        label = "MODENTER";
+        bindings = <&kp ENTER>, <&kp ENTER>;
+
+        #binding-cells = <0>;
+        mods = <(MOD_LSFT|MOD_RSFT)>;
+        keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+    };
+
+    taptwokeysmodenter: taptwokeysmodenter {
+        compatible = "zmk,behavior-hold-tap";
+        label = "TAPTWOKEYSMODENTER";
+        bindings = <&kp>, <&modenter>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "tap-unless-interrupted";
+        hold-while-undecided;
+        quick-tap-ms = <200>;
     };
 
     behaviors {
@@ -77,11 +99,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC         &kp N1     &kp N2        &kp N3        &kp N4  &kp N5       &none  &kp N6     &kp N7  &kp N8                        &kp N9           &kp N0           &kp BACKSPACE
-&kp TAB         &kp Q      &kp W         &kp E         &kp R   &kp T        &none  &kp Y      &kp U   &kp I                         &kp O            &kp P            &kp BSLH
-&lt 2 CAPSLOCK  &kp A      &kp S         &kp D         &kp F   &kp G        &none  &kp H      &kp J   &kp K                         &kp L            &kp SEMI         &kp APOS
-&tapdancekeys   &kp Z      &kp X         &kp C         &kp V   &kp B        &none  &kp N      &kp M   &kp COMMA                     &kp DOT          &kp FSLH         &twokeys RIGHT_SHIFT ENTER
-&none           &kp LCTRL  &kp LEFT_GUI  &kp LEFT_ALT  &mo 3   &kp SPACE    &none  &kp SPACE  &mo 2   &twokeys RIGHT_ALT RIGHT_GUI  &tapdancelayers  &kp RIGHT_SHIFT
+&kp ESC         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5         &none  &kp N6       &kp N7     &kp N8                        &kp N9           &kp N0           &kp BACKSPACE
+&kp TAB         &kp Q         &kp W         &kp E           &kp R      &kp T          &none  &kp Y        &kp U      &kp I                         &kp O            &kp P            &kp BSLH
+&lt 2 CAPSLOCK  &kp A         &kp S         &kp D           &kp F      &kp G          &none  &kp H        &kp J      &kp K                         &kp L            &kp SEMI         &kp APOS
+&tapdancekeys   &kp Z         &kp X         &kp C           &kp V      &kp B          &none  &kp N        &kp M      &kp COMMA                     &kp DOT          &kp FSLH         &taptwokeysmodenter RIGHT_SHIFT 0
+&none           &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &lt 3 SPACE    &none  &lt 2 SPACE  &kp SPACE  &twokeys RIGHT_ALT RIGHT_GUI  &tapdancelayers  &kp RIGHT_SHIFT
             >;
 
             display-name = "QWERTY";
@@ -92,11 +114,11 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&kp ESC       &kp N1        &kp N2         &kp N3     &kp N4     &kp N5    &none  &kp N6     &kp N7  &kp N8                        &kp N9   &kp N0           &kp BACKSPACE
-&kp TAB       &kp Q         &kp W          &kp E      &kp R      &kp T     &none  &kp Y      &kp U   &kp I                         &kp O    &kp P            &kp BSLH
-&kp CAPSLOCK  &kp A         &kp S          &kp D      &kp F      &kp G     &none  &kp H      &kp J   &kp K                         &kp L    &kp SEMI         &kp APOS
-&kp LSHFT     &kp Z         &kp X          &kp C      &kp V      &kp B     &none  &kp N      &kp M   &kp COMMA                     &kp DOT  &kp FSLH         &twokeys RIGHT_SHIFT ENTER
-&none         &kp LEFT_ALT  &kp RIGHT_ALT  &kp SPACE  &kp SPACE  &kp N0    &none  &kp SPACE  &trans  &twokeys RIGHT_ALT RIGHT_GUI  &trans   &kp RIGHT_SHIFT
+&kp ESC       &kp N1        &kp N2         &kp N3     &kp N4     &kp N5    &none  &kp N6       &kp N7     &kp N8                        &kp N9   &kp N0           &kp BACKSPACE
+&kp TAB       &kp Q         &kp W          &kp E      &kp R      &kp T     &none  &kp Y        &kp U      &kp I                         &kp O    &kp P            &kp BSLH
+&kp CAPSLOCK  &kp A         &kp S          &kp D      &kp F      &kp G     &none  &kp H        &kp J      &kp K                         &kp L    &kp SEMI         &kp APOS
+&kp LSHFT     &kp Z         &kp X          &kp C      &kp V      &kp B     &none  &kp N        &kp M      &kp COMMA                     &kp DOT  &kp FSLH         &taptwokeysmodenter RIGHT_SHIFT 0
+&none         &kp LEFT_ALT  &kp RIGHT_ALT  &kp SPACE  &kp SPACE  &kp N0    &none  &lt 2 SPACE  &kp SPACE  &twokeys RIGHT_ALT RIGHT_GUI  &trans   &kp RIGHT_SHIFT
             >;
         };
 

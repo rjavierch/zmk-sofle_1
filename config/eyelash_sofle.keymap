@@ -54,8 +54,10 @@
         bindings = <&kp>, <&kp>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        flavor = "tap-preferred";
+        tapping-term-ms = <175>;
+        flavor = "hold-preferred";
+        hold-trigger-on-release;
+        hold-trigger-key-positions = <14 1 2 15 16 3 4 5 18 31 17 30 29 28 27 40 41 42 43 44 46 47 48 49 50 37 36 35 34 33 20 21 22 23 24 11 10 9 8 7>;
     };
 
     tpd_2_keys: tpd_2_keys {
@@ -83,8 +85,10 @@
         bindings = <&kp>, <&mod_enter>;
 
         #binding-cells = <2>;
-        tapping-term-ms = <200>;
-        flavor = "tap-preferred";
+        tapping-term-ms = <175>;
+        flavor = "hold-preferred";
+        hold-trigger-key-positions = <1 2 3 4 5 18 17 16 15 14 27 28 29 30 31 44 43 42 41 40 7 8 9 10 11 24 23 22 21 20 33 34 35 36 37 50 49 48 47 46>;
+        hold-trigger-on-release;
     };
 
     mod_control: mod_control {
@@ -120,21 +124,21 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&kp ESC       &kp N1        &kp N2         &kp N3     &kp N4     &kp N5    &none  &kp N6       &kp N7     &kp N8                          &kp N9   &kp N0           &kp BACKSPACE
-&kp TAB       &kp Q         &kp W          &kp E      &kp R      &kp T     &none  &kp Y        &kp U      &kp I                           &kp O    &kp P            &kp BSLH
-&kp CAPSLOCK  &kp A         &kp S          &kp D      &kp F      &kp G     &none  &kp H        &kp J      &kp K                           &kp L    &kp SEMI         &kp APOS
-&kp LSHFT     &kp Z         &kp X          &kp C      &kp V      &kp B     &none  &kp N        &kp M      &kp COMMA                       &kp DOT  &kp FSLH         &ht_2_keys_mod_enter RIGHT_SHIFT 0
-&none         &kp LEFT_ALT  &kp RIGHT_ALT  &kp SPACE  &kp SPACE  &kp N0    &none  &lt 2 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &trans   &kp RIGHT_SHIFT
+&kp ESC           &kp N1        &kp N2         &kp N3     &kp N4     &kp N5    &none  &kp N6       &kp N7     &kp N8                          &kp N9   &kp N0           &kp BACKSPACE
+&kp TAB           &kp Q         &kp W          &kp E      &kp R      &kp T     &none  &kp Y        &kp U      &kp I                           &kp O    &kp P            &kp BSLH
+&kp LEFT_CONTROL  &kp A         &kp S          &kp D      &kp F      &kp G     &none  &kp H        &kp J      &kp K                           &kp L    &kp SEMI         &kp APOS
+&kp LSHFT         &kp Z         &kp X          &kp C      &kp V      &kp B     &none  &kp N        &kp M      &kp COMMA                       &kp DOT  &kp FSLH         &ht_2_keys_mod_enter RIGHT_SHIFT 0
+&none             &kp LEFT_ALT  &kp RIGHT_ALT  &kp SPACE  &kp SPACE  &kp N0    &none  &lt 2 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &trans   &kp RIGHT_SHIFT
             >;
         };
 
         Special {
             bindings = <
-&kp GRAVE  &kp C_VOL_DN    &kp C_MUTE         &kp C_VOLUME_UP  &none                  &none            &none  &kp MINUS       &kp UNDER        &none     &kp EQUAL         &kp PLUS           &kp DELETE
-&none      &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none      &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &none           &kp LEFT         &kp DOWN  &kp RIGHT         &none              &none
-&none      &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &none           &none            &none     &none             &none              &none
-&none      &none           &none              &kp LEFT_SHIFT   &none                  &kp ENTER        &none  &none           &none            &none     &trans            &kp RIGHT_SHIFT
+&kp GRAVE    &kp C_VOL_DN    &kp C_MUTE         &kp C_VOLUME_UP  &none                  &none            &none  &kp MINUS       &kp UNDER        &none     &kp EQUAL         &kp PLUS           &kp DELETE
+&none        &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none        &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &none           &kp LEFT         &kp DOWN  &kp RIGHT         &none              &none
+&tpd_2_keys  &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &none           &none            &none     &none             &none              &none
+&none        &none           &none              &kp LEFT_SHIFT   &none                  &kp ENTER        &none  &none           &none            &none     &trans            &kp RIGHT_SHIFT
             >;
 
             label = "Special";

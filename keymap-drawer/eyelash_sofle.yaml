@@ -133,9 +133,9 @@ layers:
   Special:
   - {t: '`', s: '~'}
   - $$mdi:volume-low$$
-  - $$mdi:volume-off$$
+  - PLAY PAUSE
   - $$mdi:volume-high$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:volume-off$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '-', s: _}

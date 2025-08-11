@@ -134,11 +134,11 @@
 
         Special {
             bindings = <
-&kp GRAVE    &kp C_VOL_DN    &kp C_PLAY_PAUSE   &kp C_VOLUME_UP  &kp C_MUTE             &none            &none  &kp MINUS       &kp UNDER        &none     &kp EQUAL         &kp PLUS           &kp DELETE
-&none        &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none        &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &none           &kp LEFT         &kp DOWN  &kp RIGHT         &none              &none
-&tpd_2_keys  &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &none           &none            &none     &none             &none              &none
-&none        &none           &none              &kp LEFT_SHIFT   &none                  &kp ENTER        &none  &none           &none            &none     &trans            &kp RIGHT_SHIFT
+&kp GRAVE    &kp C_VOL_DN    &kp C_PLAY_PAUSE   &kp C_VOLUME_UP  &kp C_MUTE             &none            &none  &kp MINUS       &kp UNDER        &none        &kp EQUAL         &kp PLUS           &kp DELETE
+&none        &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none        &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &kp CAPSLOCK    &kp LEFT         &kp UP       &kp DOWN          &kp RIGHT          &none
+&tpd_2_keys  &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &kp INSERT      &kp HOME         &kp PAGE_UP  &kp PAGE_DOWN     &kp END            &none
+&none        &none           &none              &kp LEFT_SHIFT   &none                  &kp ENTER        &none  &none           &none            &none        &trans            &kp RIGHT_SHIFT
             >;
 
             label = "Special";

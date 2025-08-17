@@ -41,11 +41,11 @@
         bindings =
             <&to 0>,
             <&to 1>,
-            <&to 2>,
             <&to 3>,
             <&to 4>,
+            <&to 2>,
             <&to 5>,
-            <&to 6>;
+            <&to 7>;
     };
 
     ht_2_keys: ht_2_keys {
@@ -111,9 +111,9 @@
             bindings = <
 &kp ESC         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5         &none  &kp N6       &kp N7     &kp N8                          &kp N9       &kp N0           &kp BACKSPACE
 &kp TAB         &kp Q         &kp W         &kp E           &kp R      &kp T          &none  &kp Y        &kp U      &kp I                           &kp O        &kp P            &kp BSLH
-&lt 2 CAPSLOCK  &kp A         &kp S         &kp D           &kp F      &kp G          &none  &kp H        &kp J      &kp K                           &kp L        &kp SEMI         &kp APOS
+&lt 3 CAPSLOCK  &kp A         &kp S         &kp D           &kp F      &kp G          &none  &kp H        &kp J      &kp K                           &kp L        &kp SEMI         &kp APOS
 &tpd_2_keys     &kp Z         &kp X         &kp C           &kp V      &kp B          &none  &kp N        &kp M      &kp COMMA                       &kp DOT      &kp FSLH         &ht_2_keys_mod_enter RIGHT_SHIFT 0
-&none           &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &lt 3 SPACE    &none  &lt 2 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &tpd_layers  &kp RIGHT_SHIFT
+&none           &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &lt 4 SPACE    &none  &lt 3 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &tpd_layers  &kp RIGHT_SHIFT
             >;
 
             display-name = "QWERTY";
@@ -128,32 +128,8 @@
 &kp TAB           &kp Q              &kp W         &kp E      &kp R      &kp T     &none  &kp Y        &kp U      &kp I                           &kp O    &kp P            &kp BSLH
 &kp LEFT_SHIFT    &kp A              &kp S         &kp D      &kp F      &kp G     &none  &kp H        &kp J      &kp K                           &kp L    &kp SEMI         &kp APOS
 &kp LEFT_CONTROL  &kp Z              &kp X         &kp C      &kp V      &kp B     &none  &kp N        &kp M      &kp COMMA                       &kp DOT  &kp FSLH         &ht_2_keys_mod_enter RIGHT_SHIFT 0
-&none             &kp RIGHT_CONTROL  &kp LEFT_ALT  &kp SPACE  &kp SPACE  &kp N0    &none  &lt 2 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &trans   &kp RIGHT_SHIFT
+&none             &kp RIGHT_CONTROL  &kp LEFT_ALT  &kp SPACE  &kp SPACE  &kp N0    &none  &lt 3 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &trans   &kp RIGHT_SHIFT
             >;
-        };
-
-        Special {
-            bindings = <
-&kp GRAVE    &kp C_VOL_DN    &kp C_PLAY_PAUSE   &kp C_VOLUME_UP  &kp C_MUTE             &none            &none  &kp MINUS       &kp UNDER        &none        &kp EQUAL         &kp PLUS           &kp DELETE
-&none        &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none        &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &kp CAPSLOCK    &kp LEFT         &kp UP       &kp DOWN          &kp RIGHT          &none
-&tpd_2_keys  &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &kp INSERT      &kp HOME         &kp PAGE_UP  &kp PAGE_DOWN     &kp END            &none
-&none        &none           &none              &kp LEFT_SHIFT   &none                  &kp ENTER        &none  &none           &none            &none        &trans            &kp RIGHT_SHIFT
-            >;
-
-            label = "Special";
-        };
-
-        Fs {
-            bindings = <
-&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &none  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
-&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &none    &none    &none
-&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &none    &none    &none
-&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &none    &none    &none
-&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &trans   &none
-            >;
-
-            label = "Fs";
         };
 
         Extra {
@@ -168,7 +144,31 @@
             label = "Extra";
         };
 
-        RGB {
+        TAP {
+            bindings = <
+&kp GRAVE    &kp C_VOL_DN    &kp C_PLAY_PAUSE   &kp C_VOLUME_UP  &kp C_MUTE             &none            &none  &kp MINUS       &kp UNDER        &none        &kp EQUAL         &kp PLUS           &kp DELETE
+&none        &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
+&none        &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &kp CAPSLOCK    &kp LEFT         &kp UP       &kp DOWN          &kp RIGHT          &none
+&tpd_2_keys  &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &kp INSERT      &kp HOME         &kp PAGE_UP  &kp PAGE_DOWN     &kp END            &none
+&none        &none           &none              &kp LEFT_SHIFT   &none                  &kp ENTER        &none  &none           &none            &none        &trans            &kp RIGHT_SHIFT
+            >;
+
+            label = "TAP";
+        };
+
+        Button {
+            bindings = <
+&kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6    &none  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &none    &none    &none
+&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &none    &none    &none
+&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &none    &none    &none
+&none   &none   &none   &none   &none   &none     &none  &none   &none   &none   &trans   &none
+            >;
+
+            label = "Button";
+        };
+
+        NAV {
             bindings = <
 &bt BT_CLR       &bt BT_SEL 0     &bt BT_SEL 1    &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4       &none  &none            &kp F7           &kp F8      &kp F9     &kp F10           &none
 &none            &bt BT_CLR       &bt BT_CLR_ALL  &none            &none            &none              &none  &kp PG_UP        &kp END          &kp UP      &kp HOME   &kp MINUS         &kp EQUAL
@@ -178,9 +178,22 @@
             >;
 
             display-name = "RGB";
+            label = "NAV";
         };
 
-        Bluetooth {
+        MOUSE {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "MOUSE";
+        };
+
+        MEDIA {
             bindings = <
 &none  &bt BT_SEL 0  &bt BT_SEL 1    &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &none  &none  &none  &none       &none      &none        &none
 &none  &bt BT_CLR    &bt BT_CLR_ALL  &none         &none         &none           &none  &none  &none  &none       &none      &none        &none
@@ -189,7 +202,43 @@
 &none  &none         &none           &none         &none         &none           &none  &none  &none  &none       &trans     &none
             >;
 
-            label = "Bluetooth";
+            label = "MEDIA";
+        };
+
+        NUM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "NUM";
+        };
+
+        SYM {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "SYM";
+        };
+
+        FUN {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "FUN";
         };
     };
 };

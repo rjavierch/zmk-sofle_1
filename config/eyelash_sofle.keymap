@@ -41,11 +41,15 @@
         bindings =
             <&to 0>,
             <&to 1>,
+            <&to 2>,
             <&to 3>,
             <&to 4>,
-            <&to 2>,
             <&to 5>,
-            <&to 7>;
+            <&to 6>,
+            <&to 7>,
+            <&to 8>,
+            <&to 9>,
+            <&to 10>;
     };
 
     ht_2_keys: ht_2_keys {
@@ -101,6 +105,26 @@
         keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RCTL|MOD_RGUI|MOD_LCTL)>;
     };
 
+    u_mt: u_mt {
+        compatible = "zmk,behavior-hold-tap";
+        label = "U_MT";
+        bindings = <&kp>, <&kp>;
+
+        #binding-cells = <2>;
+        tapping-term-ms = <200>;
+        flavor = "tap-preferred";
+    };
+
+    u_lt: u_lt {
+        compatible = "zmk,behavior-hold-tap";
+        label = "U_LT";
+        bindings = <&mo>, <&kp>;
+
+        #binding-cells = <2>;
+        flavor = "tap-preferred";
+        tapping-term-ms = <200>;
+    };
+
     behaviors {
     };
 
@@ -109,11 +133,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC         &kp N1        &kp N2        &kp N3          &kp N4     &kp N5         &none  &kp N6       &kp N7     &kp N8                          &kp N9       &kp N0           &kp BACKSPACE
-&kp TAB         &kp Q         &kp W         &kp E           &kp R      &kp T          &none  &kp Y        &kp U      &kp I                           &kp O        &kp P            &kp BSLH
-&lt 3 CAPSLOCK  &kp A         &kp S         &kp D           &kp F      &kp G          &none  &kp H        &kp J      &kp K                           &kp L        &kp SEMI         &kp APOS
-&tpd_2_keys     &kp Z         &kp X         &kp C           &kp V      &kp B          &none  &kp N        &kp M      &kp COMMA                       &kp DOT      &kp FSLH         &ht_2_keys_mod_enter RIGHT_SHIFT 0
-&none           &kp LEFT_GUI  &kp LEFT_ALT  &kp LEFT_SHIFT  &kp SPACE  &lt 4 SPACE    &none  &lt 3 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &tpd_layers  &kp RIGHT_SHIFT
+&kp ESC  &kp N1        &kp N2        &kp N3         &kp N4          &kp N5    &none  &kp N6  &kp N7         &kp N8         &kp N9          &kp N0           &kp BACKSPACE
+&none    &kp Q         &kp W         &kp E          &kp R           &kp T     &none  &kp Y   &kp U          &kp I          &kp O           &kp P            &none
+&none    &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHIFT F  &kp G     &none  &kp H   &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SEMI  &none
+&none    &u_lt 4 Z     &u_mt RALT X  &kp C          &kp V           &kp B     &none  &kp N   &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 4 SLASH    &none
+&none    &none         &u_lt 7 ESC   &u_lt 5 SPACE  &u_lt 6 TAB     &none     &none  &none   &u_lt 9 RET    &u_lt 8 BSPC   &u_lt 10 DEL    &tpd_layers
             >;
 
             display-name = "QWERTY";
@@ -146,11 +170,11 @@
 
         TAP {
             bindings = <
-&kp GRAVE    &kp C_VOL_DN    &kp C_PLAY_PAUSE   &kp C_VOLUME_UP  &kp C_MUTE             &none            &none  &kp MINUS       &kp UNDER        &none        &kp EQUAL         &kp PLUS           &kp DELETE
-&none        &kp DELETE      &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)             &kp LC(LS(T))    &none  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp UP       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &none
-&none        &msc SCRL_LEFT  &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(K_SCROLL_UP)    &none            &none  &kp CAPSLOCK    &kp LEFT         &kp UP       &kp DOWN          &kp RIGHT          &none
-&tpd_2_keys  &kp LC(PG_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(K_SCROLL_DOWN)  &none            &none  &kp INSERT      &kp HOME         &kp PAGE_UP  &kp PAGE_DOWN     &kp END            &none
-&none        &none           &none              &kp LEFT_SHIFT   &none                  &kp ENTER        &none  &none           &none            &none        &trans            &kp RIGHT_SHIFT
+&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &kp N6     &kp N7     &kp N8     &kp N9     &kp N0       &kp BSPC
+&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T           &none  &kp Y      &kp U      &kp I      &kp O      &kp P        &kp BSLH
+&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &none  &kp H      &kp J      &kp K      &kp L      &kp SEMI     &kp APOS
+&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &none  &kp N      &kp M      &kp COMMA  &kp DOT    &kp FSLH     &kp RSHFT
+&none       &kp LGUI      &kp LALT      &kp SPACE     &kp SPACE     &kp SPACE       &none  &kp SPACE  &kp SPACE  &kp SPACE  &kp ENTER  &tpd_layers
             >;
 
             label = "TAP";

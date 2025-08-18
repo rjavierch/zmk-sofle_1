@@ -133,11 +133,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC     &kp N1        &kp N2        &kp N3         &kp N4          &kp N5           &none  &kp N6         &kp N7         &kp N8         &kp N9          &kp N0           &kp BACKSPACE
-&kp TAB     &kp Q         &kp W         &kp E          &kp R           &kp T            &none  &kp Y          &kp U          &kp I          &kp O           &kp P            &kp BACKSLASH
-&kp LSHIFT  &u_mt LGUI A  &u_mt LALT S  &u_mt LCTRL D  &u_mt LSHIFT F  &kp G            &none  &kp H          &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SEMI  &kp SQT
-&kp LCTRL   &u_lt 4 Z     &u_mt RALT X  &kp C          &kp V           &kp B            &none  &kp N          &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 4 SLASH    &kp RSHIFT
-&none       &kp LGUI      &u_lt 7 ESC   &u_lt 7 SPACE  &u_lt 5 SPACE   &u_lt 6 SPACE    &none  &u_lt 9 SPACE  &u_lt 8 SPACE  &u_lt 10 RALT  &tpd_layers     &kp RETURN
+&kp ESC     &kp N1        &kp N2            &kp N3         &kp N4          &kp N5           &none  &kp N6         &kp N7         &kp N8         &kp N9          &kp N0           &kp BACKSPACE
+&kp TAB     &kp Q         &kp W             &kp E          &kp R           &kp T            &none  &kp Y          &kp U          &kp I          &kp O           &kp P            &kp BACKSLASH
+&kp LSHIFT  &u_mt LGUI A  &u_mt LALT S      &u_mt LCTRL D  &u_mt LSHIFT F  &kp G            &none  &kp H          &u_mt LSHFT J  &u_mt LCTRL K  &u_mt LALT L    &u_mt LGUI SEMI  &kp SQT
+&kp LCTRL   &u_lt 4 Z     &u_mt RALT X      &kp C          &kp V           &kp B            &none  &kp N          &kp M          &kp COMMA      &u_mt RALT DOT  &u_lt 4 SLASH    &kp RSHIFT
+&none       &kp LGUI      &u_lt 7 LEFT_ALT  &u_lt 4 SPACE  &u_lt 5 SPACE   &u_lt 6 SPACE    &none  &u_lt 9 SPACE  &u_lt 8 SPACE  &u_lt 10 RALT  &tpd_layers     &kp RETURN
             >;
 
             display-name = "QWERTY";
@@ -201,7 +201,7 @@
 &none  &none           &none         &none           &none            &none    &none  &kp RETURN  &kp BSPC   &kp DEL    &trans     &none
             >;
 
-            display-name = "RGB";
+            display-name = "NAV";
             label = "NAV";
         };
 

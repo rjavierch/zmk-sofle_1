@@ -616,7 +616,7 @@ rect.held, rect.combo.held {
 <g transform="translate(196, 252)" class="key keypos-54">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:keyboard-esc" xlink:href="#mdi:keyboard-esc" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-esc"/>
+<use href="#mdi:apple-keyboard-option" xlink:href="#mdi:apple-keyboard-option" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:apple-keyboard-option"/>
 <a href="#MEDIA">
 <text x="0" y="24" class="key hold layer-activator">MEDIA</text>
 </a></g>
@@ -624,8 +624,8 @@ rect.held, rect.combo.held {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:keyboard-space"/>
-<a href="#MEDIA">
-<text x="0" y="24" class="key hold layer-activator">MEDIA</text>
+<a href="#Button">
+<text x="0" y="24" class="key hold layer-activator">Button</text>
 </a></g>
 <g transform="translate(314, 283) rotate(30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -1964,10 +1964,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(252, 259)" class="key keypos-55">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="-9" y="-13" height="18" width="18.0" class="key tap glyph mdi:mouse-scroll-wheel"/>
+<g transform="translate(252, 259)" class="key held alternate keypos-55">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
+<use href="#mdi:mouse-scroll-wheel" xlink:href="#mdi:mouse-scroll-wheel" x="-9" y="-13" height="18" width="18.0" class="key held alternate tap glyph mdi:mouse-scroll-wheel"/>
 </g>
 <g transform="translate(314, 283) rotate(30.0)" class="key keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -2976,10 +2976,10 @@ rect.held, rect.combo.held {
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held"/>
 <use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key held tap glyph mdi:minus-circle-outline"/>
 </g>
-<g transform="translate(252, 259)" class="key held alternate keypos-55">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held alternate side"/>
-<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key held alternate"/>
-<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key held alternate tap glyph mdi:minus-circle-outline"/>
+<g transform="translate(252, 259)" class="key none keypos-55">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>
+<rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key none"/>
+<use href="#mdi:minus-circle-outline" xlink:href="#mdi:minus-circle-outline" x="-9" y="-13" height="18" width="18.0" class="key none tap glyph mdi:minus-circle-outline"/>
 </g>
 <g transform="translate(314, 283) rotate(30.0)" class="key none keypos-56">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key none side"/>

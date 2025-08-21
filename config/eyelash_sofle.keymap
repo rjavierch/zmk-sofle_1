@@ -143,11 +143,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC     &kp N1        &kp N2            &kp N3         &kp N4          &kp N5           &none  &kp N6         &kp N7         &kp N8          &kp N9                      &kp N0           &kp BACKSPACE
-&kp TAB     &kp Q         &kp W             &kp E          &kp R           &kp T            &none  &kp Y          &kp U          &kp I           &kp O                       &kp P            &kp BACKSLASH
-&kp LSHIFT  &u_mt LGUI A  &u_mt LALT S      &u_mt LCTRL D  &u_mt LSHIFT F  &kp G            &none  &kp H          &u_mt LSHFT J  &u_mt LCTRL K   &u_mt LALT L                &u_mt LGUI SEMI  &kp SQT
-&kp LCTRL   &u_lt 4 Z     &u_mt RALT X      &kp C          &kp V           &kp B            &none  &kp N          &kp M          &kp COMMA       &u_mt RALT DOT              &u_lt 4 SLASH    &kp RSHIFT
-&none       &kp LGUI      &u_lt 7 LEFT_ALT  &u_lt 4 SPACE  &u_lt 5 SPACE   &u_lt 6 SPACE    &none  &u_lt 9 SPACE  &u_lt 8 SPACE  &u_lt 10 ENTER  &mod_tap_dance RIGHT_ALT 0  &kp DELETE
+&kp ESC     &kp N1        &kp N2            &kp N3         &kp N4          &kp N5            &kp C_VOLUME_UP    &kp N6          &kp N7         &kp N8          &kp N9                      &kp N0           &kp BACKSPACE
+&kp TAB     &kp Q         &kp W             &kp E          &kp R           &kp T             &kp C_VOLUME_DOWN  &kp Y           &kp U          &kp I           &kp O                       &kp P            &kp BACKSLASH
+&kp LSHIFT  &u_mt LGUI A  &u_mt LALT S      &u_mt LCTRL D  &u_mt LSHIFT F  &kp G             &none              &kp H           &u_mt LSHFT J  &u_mt LCTRL K   &u_mt LALT L                &u_mt LGUI SEMI  &kp SQT
+&kp LCTRL   &u_lt 4 Z     &u_mt RALT X      &kp C          &kp V           &kp B             &none              &kp N           &kp M          &kp COMMA       &u_mt RALT DOT              &u_lt 4 SLASH    &kp RSHIFT
+&none       &kp LGUI      &u_lt 7 LEFT_ALT  &u_lt 4 SPACE  &u_lt 5 SPACE   &u_lt 6 RETURN    &kp C_MUTE         &u_lt 9 RETURN  &u_lt 8 SPACE  &u_lt 10 SPACE  &mod_tap_dance RIGHT_ALT 0  &kp DELETE
             >;
 
             display-name = "QWERTY";
@@ -204,11 +204,11 @@
 
         NAV {
             bindings = <
-&none  &none           &none         &none           &none            &none    &none  &none       &none      &none      &none      &kp DELETE  &kp BACKSPACE
-&none  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none    &none  &kp LC(Y)   &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)   &none
-&none  &kp LGUI        &kp LALT      &kp LCTRL       &kp LSHFT        &none    &none  &kp CAPS    &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT   &none
-&none  &kp LEFT        &kp UP        &kp DOWN        &kp RIGHT        &none    &none  &kp INSERT  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END     &none
-&none  &none           &none         &none           &none            &none    &none  &kp RETURN  &kp BSPC   &kp DEL    &trans     &none
+&none  &none           &none         &none           &none            &none    &kp UP_ARROW  &none       &none      &none      &none      &kp DELETE  &kp BACKSPACE
+&none  &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none    &kp DOWN      &kp LC(Y)   &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LC(Z)   &none
+&none  &kp LGUI        &kp LALT      &kp LCTRL       &kp LSHFT        &none    &kp LEFT      &kp CAPS    &kp LEFT   &kp UP     &kp DOWN   &kp RIGHT   &none
+&none  &kp LEFT        &kp UP        &kp DOWN        &kp RIGHT        &none    &kp RIGHT     &kp INSERT  &kp HOME   &kp PG_DN  &kp PG_UP  &kp END     &none
+&none  &none           &none         &none           &none            &none    &kp LC(V)     &kp RETURN  &kp BSPC   &kp DEL    &trans     &none
             >;
 
             display-name = "NAV";

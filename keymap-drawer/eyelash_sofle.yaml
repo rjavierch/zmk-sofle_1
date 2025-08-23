@@ -63,7 +63,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: FUN}
-  - {t: '&tpd_layers', h: '$$mdi:apple-keyboard-option$$'}
+  - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-shift$$
   Game:
   - $$mdi:keyboard-esc$$
@@ -117,7 +117,7 @@ layers:
   - {t: ',', s: <}
   - {t: ., s: '>'}
   - {t: /, s: '?'}
-  - $$mdi:apple-keyboard-shift$$
+  - RETURN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '6'
   - '7'
@@ -126,10 +126,10 @@ layers:
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', h: MEDIA}
-  - $$mdi:keyboard-space$$
-  - {t: RIGHT GUI, h: '$$mdi:apple-keyboard-option$$'}
+  - {t: '$$mdi:keyboard-space$$', h: NAV}
+  - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:transfer$$', type: trans}
-  - RETURN
+  - $$mdi:apple-keyboard-shift$$
   Extra:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -337,7 +337,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:pan-left$$
@@ -386,7 +386,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+V
   - RETURN
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - {t: '$$mdi:backspace$$', type: held alternate}
   - $$mdi:backspace-reverse-outline$$
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -532,7 +532,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '[', s: '{'}
@@ -597,7 +597,7 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:backspace$$', type: backspace}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '{'
@@ -718,3 +718,20 @@ layers:
 combos:
 - p: [53, 54]
   k: $$mdi:apple-keyboard-option$$
+  l: [QWERTY]
+- p: [11, 12]
+  k: $$mdi:backspace-reverse-outline$$
+- p: [2, 3]
+  k: $$mdi:volume-high$$
+- p: [0, 1]
+  k: $$mdi:volume-low$$
+- p: [4, 5]
+  k: $$mdi:volume-off$$
+  a: top
+  o: 0.15
+- p: [62, 63]
+  k: RIGHT GUI
+- p: [59, 60, 61, 62]
+  k: '&tpd_layers'
+- p: [54, 55, 56, 57]
+  k: '&tpd_layers'

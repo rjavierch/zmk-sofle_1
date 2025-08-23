@@ -736,7 +736,7 @@ combos:
 - p: [55, 56, 57]
   k: '&tpd_layers'
 - p: [3, 4]
-  k: $$mdi:volume-off$$
+  k: PLAY PAUSE
 - p: [0, 1, 2]
   k: $$mdi:skip-previous$$
 - p: [3, 4, 5]

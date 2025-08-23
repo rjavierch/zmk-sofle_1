@@ -714,7 +714,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-8">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-9">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -1113,7 +1115,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -1490,7 +1494,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -1878,7 +1884,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -2255,7 +2263,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -2632,7 +2642,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -3020,7 +3032,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -3422,7 +3436,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -3807,7 +3823,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -4184,7 +4202,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>
@@ -4561,7 +4581,9 @@ rect.held, rect.combo.held {
 </g>
 <g class="combo combopos-7">
 <rect rx="6" ry="6" x="210" y="18" width="28" height="26" class="combo"/>
-<use href="#mdi:volume-off" xlink:href="#mdi:volume-off" x="215" y="22" height="18" width="18.0" class="combo tap glyph mdi:volume-off"/>
+<text x="224" y="32" class="combo tap">
+<tspan x="224" dy="-0.6em">PLAY</tspan><tspan x="224" dy="1.2em">PAUSE</tspan>
+</text>
 </g>
 <g class="combo combopos-8">
 <path d="M84,49 l-37,5" class="combo"/>

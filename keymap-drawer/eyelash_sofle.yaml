@@ -360,10 +360,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
   - $$mdi:apple-keyboard-caps$$
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-up-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - $$mdi:apple-keyboard-shift$$
+  - $$mdi:apple-keyboard-control$$
+  - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-command$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-left-bold$$
@@ -372,12 +372,12 @@ layers:
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-right-bold$$
-  - Ins
-  - HOME
-  - PG DN
-  - PG UP
-  - END
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:arrow-left-bold$$
+  - $$mdi:arrow-up-bold$$
+  - $$mdi:arrow-down-bold$$
+  - $$mdi:arrow-right-bold$$
+  - RETURN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -385,9 +385,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - Ctl+V
-  - RETURN
-  - {t: '$$mdi:backspace$$', type: held alternate}
-  - $$mdi:backspace-reverse-outline$$
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   MOUSE:
@@ -572,7 +572,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RETURN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: ',', s: <}
@@ -637,7 +637,7 @@ layers:
   - $$mdi:arrow-up-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - RETURN
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - <
@@ -721,17 +721,23 @@ combos:
   l: [QWERTY]
 - p: [11, 12]
   k: $$mdi:backspace-reverse-outline$$
-- p: [2, 3]
+- p: [2, 1]
   k: $$mdi:volume-high$$
 - p: [0, 1]
   k: $$mdi:volume-low$$
-- p: [4, 5]
+- p: [2, 3]
   k: $$mdi:volume-off$$
   a: top
   o: 0.15
 - p: [62, 63]
   k: RIGHT GUI
-- p: [59, 60, 61, 62]
+- p: [59, 60, 61]
   k: '&tpd_layers'
-- p: [54, 55, 56, 57]
+- p: [55, 56, 57]
   k: '&tpd_layers'
+- p: [3, 4]
+  k: $$mdi:volume-off$$
+- p: [0, 1, 2]
+  k: $$mdi:skip-previous$$
+- p: [3, 4, 5]
+  k: $$mdi:skip-next$$

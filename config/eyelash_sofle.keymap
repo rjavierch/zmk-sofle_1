@@ -52,59 +52,6 @@
             <&to 10>;
     };
 
-    ht_2_keys: ht_2_keys {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HT_2_KEYS";
-        bindings = <&kp>, <&kp>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <175>;
-        flavor = "hold-preferred";
-        hold-trigger-on-release;
-        hold-trigger-key-positions = <14 1 2 15 16 3 4 5 18 31 17 30 29 28 27 40 41 42 43 44 46 47 48 49 50 37 36 35 34 33 20 21 22 23 24 11 10 9 8 7>;
-    };
-
-    tpd_2_keys: tpd_2_keys {
-        compatible = "zmk,behavior-tap-dance";
-        label = "TPD_2_KEYS";
-        #binding-cells = <0>;
-        bindings = <&mod_control>, <&kp LEFT_SHIFT>;
-
-        tapping-term-ms = <200>;
-    };
-
-    mod_enter: mod_enter {
-        compatible = "zmk,behavior-mod-morph";
-        label = "MOD_ENTER";
-        bindings = <&kp ENTER>, <&kp ENTER>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT|MOD_RALT|MOD_LALT|MOD_LCTL|MOD_LGUI|MOD_RCTL)>;
-        keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RCTL|MOD_LCTL|MOD_RGUI)>;
-    };
-
-    ht_2_keys_mod_enter: ht_2_keys_mod_enter {
-        compatible = "zmk,behavior-hold-tap";
-        label = "HT_2_KEYS_MOD_ENTER";
-        bindings = <&kp>, <&mod_enter>;
-
-        #binding-cells = <2>;
-        tapping-term-ms = <175>;
-        flavor = "hold-preferred";
-        hold-trigger-key-positions = <1 2 3 4 5 18 17 16 15 14 27 28 29 30 31 44 43 42 41 40 7 8 9 10 11 24 23 22 21 20 33 34 35 36 37 50 49 48 47 46>;
-        hold-trigger-on-release;
-    };
-
-    mod_control: mod_control {
-        compatible = "zmk,behavior-mod-morph";
-        label = "MOD_CONTROL";
-        bindings = <&kp LEFT_CONTROL>, <&kp LEFT_CONTROL>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_LSFT|MOD_RSFT|MOD_RGUI|MOD_RALT|MOD_RCTL|MOD_LGUI|MOD_LALT|MOD_LCTL)>;
-        keep-mods = <(MOD_LSFT|MOD_RSFT|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RCTL|MOD_RGUI|MOD_LCTL)>;
-    };
-
     u_mt: u_mt {
         compatible = "zmk,behavior-hold-tap";
         label = "U_MT";
@@ -138,16 +85,25 @@
     behaviors {
     };
 
+    combos {
+        compatible = "zmk,combos";
+
+        combo_alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <53 54>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         QWERTY {
             bindings = <
-&kp ESC     &kp N1        &kp N2            &kp N3         &kp N4          &kp N5            &kp C_VOLUME_UP    &kp N6          &kp N7         &kp N8          &kp N9                      &kp N0           &kp BACKSPACE
-&kp TAB     &kp Q         &kp W             &kp E          &kp R           &kp T             &kp C_VOLUME_DOWN  &kp Y           &kp U          &kp I           &kp O                       &kp P            &kp BACKSLASH
-&kp LSHIFT  &u_mt LGUI A  &u_mt LALT S      &u_mt LCTRL D  &u_mt LSHIFT F  &kp G             &none              &kp H           &u_mt LSHFT J  &u_mt LCTRL K   &u_mt LALT L                &u_mt LGUI SEMI  &kp SQT
-&kp LCTRL   &u_lt 4 Z     &u_mt RALT X      &kp C          &kp V           &kp B             &none              &kp N           &kp M          &kp COMMA       &u_mt RALT DOT              &u_lt 4 SLASH    &kp RSHIFT
-&none       &kp LGUI      &u_lt 7 LEFT_ALT  &u_lt 4 SPACE  &u_lt 5 SPACE   &u_lt 6 RETURN    &kp C_MUTE         &u_lt 9 RETURN  &u_lt 8 SPACE  &u_lt 10 SPACE  &mod_tap_dance RIGHT_ALT 0  &kp DELETE
+&kp ESC     &kp N1        &kp N2          &kp N3         &kp N4          &kp N5           &kp C_VOLUME_UP    &kp N6         &kp N7         &kp N8          &kp N9                      &kp N0                 &kp BACKSPACE
+&kp TAB     &kp Q         &kp W           &kp E          &kp R           &kp T            &kp C_VOLUME_DOWN  &kp Y          &kp U          &kp I           &kp O                       &kp P                  &kp BACKSLASH
+&kp LSHIFT  &u_mt LGUI A  &u_mt LALT S    &u_mt LCTRL D  &u_mt LSHIFT F  &kp G            &none              &kp H          &u_mt LSHFT J  &u_mt LCTRL K   &u_mt LALT L                &u_mt LGUI SEMI        &kp SQT
+&kp LCTRL   &kp Z         &u_mt RALT X    &kp C          &kp V           &kp B            &none              &kp N          &kp M          &kp COMMA       &kp PERIOD                  &u_mt RIGHT_ALT SLASH  &kp RETURN
+&none       &kp LGUI      &u_lt 7 RETURN  &u_lt 4 SPACE  &u_lt 5 SPACE   &u_lt 6 SPACE    &kp C_MUTE         &u_lt 9 SPACE  &u_lt 8 SPACE  &u_lt 10 SPACE  &mod_tap_dance RIGHT_ALT 0  &kp RIGHT_SHIFT
             >;
 
             display-name = "QWERTY";
@@ -158,11 +114,11 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6       &kp N7     &kp N8                          &kp N9   &kp N0      &kp BACKSPACE
-&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y        &kp U      &kp I                           &kp O    &kp P       &kp BSLH
-&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H        &kp J      &kp K                           &kp L    &kp SEMI    &kp APOS
-&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N        &kp M      &kp COMMA                       &kp DOT  &kp FSLH    &kp RSHIFT
-&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &lt 7 SPACE  &kp SPACE  &ht_2_keys RIGHT_ALT RIGHT_GUI  &trans   &kp RETURN
+&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6       &kp N7     &kp N8                     &kp N9   &kp N0      &kp BACKSPACE
+&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y        &kp U      &kp I                      &kp O    &kp P       &kp BSLH
+&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H        &kp J      &kp K                      &kp L    &kp SEMI    &kp APOS
+&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N        &kp M      &kp COMMA                  &kp DOT  &kp FSLH    &kp RSHIFT
+&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &lt 7 SPACE  &kp SPACE  &u_mt RIGHT_ALT RIGHT_GUI  &trans   &kp RETURN
             >;
         };
 
@@ -241,11 +197,11 @@
 
         NUM {
             bindings = <
-&none  &none             &none         &none         &none         &none                &none  &none  &none      &none      &none     &kp DELETE  &kp BACKSPACE
-&none  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET    &none  &none  &none      &none      &none     &none       &none
-&none  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL            &none  &none  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI    &none
-&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &none  &none      &none      &none     &none       &none
-&none  &none             &kp COMMA     &kp PERIOD    &kp NUMBER_0  &kp MINUS            &none  &none  &none      &none      &trans    &none
+&none  &none             &none         &none         &none         &none                &none  &none  &none           &none         &none           &kp DELETE       &kp BACKSPACE
+&none  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET    &none  &none  &none           &none         &none           &none            &none
+&none  &kp SEMICOLON     &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp EQUAL            &none  &none  &kp LSHFT       &kp LCTRL     &kp LALT        &kp LGUI         &none
+&none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp BACKSLASH        &none  &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&none  &none             &kp COMMA     &kp PERIOD    &kp NUMBER_0  &kp MINUS            &none  &none  &none           &none         &trans          &none
             >;
 
             label = "NUM";
@@ -253,11 +209,11 @@
 
         SYM {
             bindings = <
-&none  &none           &none            &none             &none                  &none              &none  &none  &none       &none      &none     &kp DELETE  &kp BACKSPACE
-&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &none  &none       &none      &none     &none       &none
-&none  &kp COLON       &kp DOLLAR       &kp PERCENT       &kp CARET              &kp PLUS           &none  &none  &kp LSHIFT  &kp LCTRL  &kp LALT  &kp LGUI    &none
-&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN       &kp HASH               &kp PIPE           &none  &none  &none       &none      &none     &none       &none
-&none  &none           &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none  &none       &none      &trans    &none
+&none  &none           &none            &none             &none                  &none              &none  &none  &none           &none         &none           &kp DELETE       &kp BACKSPACE
+&none  &kp LEFT_BRACE  &kp AMPERSAND    &kp ASTERISK      &kp LEFT_PARENTHESIS   &kp RIGHT_BRACE    &none  &none  &none           &none         &none           &none            &none
+&none  &kp COLON       &kp DOLLAR       &kp PERCENT       &kp CARET              &kp PLUS           &none  &none  &kp LSHIFT      &kp LCTRL     &kp LALT        &kp LGUI         &none
+&none  &kp TILDE       &kp EXCLAMATION  &kp AT_SIGN       &kp HASH               &kp PIPE           &none  &none  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&none  &none           &kp LESS_THAN    &kp GREATER_THAN  &kp RIGHT_PARENTHESIS  &kp UNDERSCORE     &none  &none  &none           &none         &trans          &none
             >;
 
             label = "SYM";

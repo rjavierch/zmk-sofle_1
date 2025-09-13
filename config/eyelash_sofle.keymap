@@ -14,7 +14,7 @@
 &msc_input_listener { input-processors = <&zip_scroll_scaler 2 1>; };
 
 &msc {
-    time-to-max-speed-ms = <100>;       // 300                   // 0
+    time-to-max-speed-ms = <0>;       // 300                   // 0
 };
 
 &mmv {
@@ -95,16 +95,19 @@
         combo_volup {
             bindings = <&kp C_VOLUME_UP>;
             key-positions = <1 3>;
+            timeout-ms = <400>;
         };
 
         combo_voldn {
             bindings = <&kp C_VOL_DN>;
             key-positions = <0 2>;
+            timeout-ms = <400>;
         };
 
         combo_mute {
             bindings = <&kp C_MUTE>;
             key-positions = <2 4>;
+            timeout-ms = <400>;
         };
 
         combo_rgui {
@@ -125,21 +128,24 @@
         combo_playpause {
             bindings = <&kp C_PLAY_PAUSE>;
             key-positions = <3 5>;
+            timeout-ms = <400>;
         };
 
         combo_prev {
             bindings = <&kp C_PREV>;
             key-positions = <0 1 2>;
+            timeout-ms = <400>;
         };
 
         combo_forward {
             bindings = <&kp C_NEXT>;
             key-positions = <3 4 5>;
+            timeout-ms = <400>;
         };
 
         FN_layer {
             bindings = <&mo 10>;
-            key-positions = <57 53>;
+            key-positions = <55 54>;
         };
 
         Media_layer {
@@ -150,26 +156,42 @@
         double_space_block {
             bindings = <&none>;
             key-positions = <55 56>;
+            layers = <0 2 3 4 5 6 7 8 9 10>;
         };
 
         double_space_block2 {
             bindings = <&none>;
             key-positions = <56 57>;
+            layers = <3 0 2 4 5 6 7 8 9 10>;
         };
 
         double_space_none {
             bindings = <&none>;
             key-positions = <59 60>;
+            layers = <0 2 3 4 5 6 7 8 9 10>;
         };
 
         double_space_none2 {
             bindings = <&none>;
             key-positions = <60 61>;
+            layers = <0 2 3 4 5 6 7 8 10 9>;
         };
 
         turn_off_pc {
-            bindings = <&kp C_POWER>;
-            key-positions = <0 1 2 3 4 5 7 8 9 10 11 12>;
+            bindings = <&kp K_POWER>;
+            key-positions = <10 11 12 9>;
+            layers = <5>;
+        };
+
+        Fun_layer {
+            bindings = <&mo 10>;
+            key-positions = <61 62>;
+            layers = <0 2 3 4 5 6 7 8 9 10>;
+        };
+
+        caps {
+            bindings = <&kp CAPSLOCK>;
+            key-positions = <0 13>;
         };
     };
 
@@ -178,11 +200,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC     &kp N1                &kp N2            &kp N3            &kp N4          &kp N5           &kp C_VOLUME_UP    &kp N6         &kp N7          &kp N8            &kp N9            &kp N0                   &kp BACKSPACE
-&kp TAB     &kp Q                 &kp W             &kp E             &kp R           &kp T            &kp C_VOLUME_DOWN  &kp Y          &kp U           &kp I             &kp O             &kp P                    &kp BACKSLASH
-&kp LSHIFT  &u_mt LEFT_CONTROL A  &u_mt LEFT_GUI S  &u_mt LEFT_ALT D  &u_mt LSHIFT F  &kp G            &none              &kp H          &u_mt LSHFT J   &u_mt LEFT_ALT K  &u_mt LEFT_GUI L  &u_mt LEFT_CONTROL SEMI  &kp SQT
-&kp LCTRL   &kp Z                 &u_mt RALT X      &kp C             &kp V           &kp B            &none              &kp N          &kp M           &kp COMMA         &kp PERIOD        &kp SLASH                &kp RETURN
-&none       &kp LGUI              &kp LEFT_ALT      &u_lt 5 SPACE     &u_lt 9 SPACE   &u_lt 8 SPACE    &kp C_MUTE         &u_lt 8 SPACE  &u_lt 10 SPACE  &u_lt 5 SPACE     &kp RIGHT_ALT     &kp RIGHT_SHIFT
+&kp ESC     &kp N1    &kp N2        &kp N3         &kp N4         &kp N5           &kp C_VOLUME_UP    &kp N6         &kp N7         &kp N8         &kp N9         &kp N0             &kp BACKSPACE
+&kp TAB     &kp Q     &kp W         &kp E          &kp R          &kp T            &kp C_VOLUME_DOWN  &kp Y          &kp U          &kp I          &kp O          &kp P              &kp RETURN
+&kp LSHIFT  &kp A     &kp S         &kp D          &kp F          &kp G            &none              &kp H          &kp J          &kp K          &kp L          &kp UP_ARROW       &kp RIGHT_SHIFT
+&kp LCTRL   &kp Z     &kp X         &kp C          &kp V          &kp B            &none              &kp N          &kp M          &kp PERIOD     &kp LEFT       &kp DOWN           &kp RIGHT
+&none       &kp LGUI  &kp LEFT_ALT  &u_lt 5 SPACE  &u_lt 8 SPACE  &u_lt 9 SPACE    &kp C_MUTE         &u_lt 9 SPACE  &u_lt 8 SPACE  &u_lt 5 SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
 
             display-name = "QWERTY";
@@ -193,21 +215,21 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6       &kp N7         &kp N8          &kp N9   &kp N0           &kp BACKSPACE
-&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y        &kp U          &kp I           &kp O    &kp P            &kp BSLH
-&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H        &kp J          &kp K           &kp L    &kp SEMI         &kp APOS
-&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N        &kp M          &kp COMMA       &kp DOT  &kp FSLH         &kp RETURN
-&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &lt 7 SPACE  &u_lt 5 SPACE  &u_lt 10 SPACE  &trans   &kp RIGHT_SHIFT
+&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6       &kp N7          &kp N8         &kp N9         &kp N0             &kp BACKSPACE
+&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y        &kp U           &kp I          &kp O          &kp P              &kp RETURN
+&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H        &kp J           &kp K          &kp L          &kp UP_ARROW       &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N        &kp M           &kp PERIOD     &kp LEFT       &kp DOWN           &kp RIGHT_ARROW
+&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &lt 8 SPACE  &u_lt 10 SPACE  &u_lt 5 SPACE  &kp RIGHT_ALT  &kp RIGHT_CONTROL
             >;
         };
 
         Extra {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none   &none  &none
-&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &trans  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             label = "Extra";
@@ -215,11 +237,11 @@
 
         TAP {
             bindings = <
-&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &kp N6     &kp N7     &kp N8     &kp N9   &kp N0           &kp BSPC
-&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T           &none  &kp Y      &kp U      &kp I      &kp O    &kp P            &kp BSLH
-&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &none  &kp H      &kp J      &kp K      &kp L    &kp SEMI         &kp APOS
-&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &none  &kp N      &kp M      &kp COMMA  &kp DOT  &kp FSLH         &kp RETURN
-&none       &kp LGUI      &kp LALT      &kp SPACE     &kp SPACE     &kp SPACE       &none  &kp SPACE  &kp SPACE  &kp SPACE  &trans   &kp RIGHT_SHIFT
+&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &kp N6     &kp N7     &kp N8      &kp N9          &kp N0             &kp BSPC
+&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T           &none  &kp Y      &kp U      &kp I       &kp O           &kp P              &kp RETURN
+&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &none  &kp H      &kp J      &kp K       &kp L           &kp UP_ARROW       &kp RIGHT_SHIFT
+&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &none  &kp N      &kp M      &kp PERIOD  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW
+&none       &kp LGUI      &kp LALT      &kp SPACE     &kp SPACE     &kp SPACE       &none  &kp SPACE  &kp SPACE  &kp SPACE   &kp RIGHT_ALT   &kp RIGHT_CONTROL
             >;
 
             label = "TAP";
@@ -227,11 +249,11 @@
 
         Button {
             bindings = <
-&none  &none             &none         &none         &none       &none        &none  &none      &none      &none         &none         &none             &none
-&none  &kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)   &kp LC(Y)    &none  &kp LC(Y)  &kp LC(V)  &kp LC(C)     &kp LC(X)     &kp LC(Z)         &none
-&none  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LSHIFT  &none        &none  &none      &kp LSHFT  &kp LEFT_ALT  &kp LEFT_GUI  &kp LEFT_CONTROL  &none
-&none  &kp LC(Z)         &kp LC(X)     &kp LC(C)     &kp LC(V)   &kp LC(Y)    &none  &kp LC(Y)  &kp LC(V)  &kp LC(C)     &kp LC(X)     &kp LC(Z)         &none
-&none  &none             &none         &mkp MCLK     &mkp LCLK   &mkp RCLK    &none  &mkp RCLK  &mkp LCLK  &mkp MCLK     &trans        &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             label = "Button";
@@ -239,11 +261,11 @@
 
         NAV {
             bindings = <
-&none             &none             &none         &none           &none            &none            &kp UP_ARROW  &none     &none           &none           &none         &none             &kp BACKSPACE
-&kp DELETE        &msc SCRL_LEFT    &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp BACKSPACE    &kp DOWN      &none     &msc SCRL_LEFT  &msc SCRL_DOWN  &msc SCRL_UP  &msc SCRL_RIGHT   &none
-&kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT    &kp LSHFT        &kp CAPSLOCK     &kp LEFT      &kp CAPS  &kp LEFT_SHIFT  &kp LEFT_ALT    &kp LEFT_GUI  &kp LEFT_CONTROL  &none
-&kp LEFT_CONTROL  &kp LEFT          &kp UP        &kp DOWN        &kp RIGHT        &kp RETURN       &kp RIGHT     &none     &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT_ARROW   &kp RETURN
-&none             &none             &none         &none           &none            &none            &kp LC(V)     &none     &none           &none           &trans        &none
+&none             &none            &none              &none            &none          &none            &kp UP_ARROW  &none  &none  &none  &none  &none  &none
+&kp CAPSLOCK      &kp DELETE       &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)     &kp LS(LC(T))    &kp DOWN      &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT    &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(PLUS)   &none            &kp LEFT      &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(C)        &kp LC(MINUS)  &none            &kp RIGHT     &none  &none  &none  &none  &none  &none
+&none             &kp LEFT_WIN     &kp LEFT_ALT       &none            &none          &none            &kp LC(V)     &none  &none  &none  &none  &none
             >;
 
             display-name = "NAV";
@@ -252,11 +274,11 @@
 
         MOUSE {
             bindings = <
-&none  &none             &none              &none          &none       &none            &none  &none      &none           &none         &none           &none            &none
-&none  &kp DELETE        &none              &kp BACKSPACE  &kp LC(N0)  &kp LS(LC(T))    &none  &kp LC(Y)  &kp LC(V)       &kp LC(C)     &kp LC(X)       &kp LC(Z)        &none
-&none  &kp LEFT_CONTROL  &kp LEFT_GUI       &kp LEFT_ALT   &kp LSHIFT  &none            &none  &none      &mmv MOVE_LEFT  &mmv MOVE_UP  &mmv MOVE_DOWN  &mmv MOVE_RIGHT  &none
-&none  &kp LC(PAGE_UP)   &kp LC(PAGE_DOWN)  &kp LC(W)      &none       &none            &none  &none      &msc SCRL_LEFT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &none
-&none  &none             &none              &none          &none       &none            &none  &mkp RCLK  &mkp LCLK       &mkp MCLK     &trans          &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none  &none  &none  &none
             >;
 
             label = "MOUSE";
@@ -264,11 +286,11 @@
 
         MEDIA {
             bindings = <
-&none  &none             &none         &none         &none       &none    &none  &none            &none            &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI
-&none  &none             &none         &none         &none       &none    &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD
-&none  &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT  &kp LSHIFT  &none    &none  &none            &none            &none            &none            &none            &bt BT_CLR
-&none  &none             &none         &none         &none       &none    &none  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none
-&none  &none             &none         &none         &none       &none    &none  &none            &none            &none            &trans           &none
+&none  &none  &none  &none  &none  &none    &none  &none            &none            &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI
+&none  &none  &none  &none  &none  &none    &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD
+&none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &none            &none            &bt BT_CLR
+&none  &none  &none  &none  &none  &none    &none  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none
+&none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &trans           &none
             >;
 
             label = "MEDIA";
@@ -276,11 +298,11 @@
 
         NUM {
             bindings = <
-&none             &none             &none         &none           &none            &none            &none  &none             &none         &none         &none         &none              &kp BACKSPACE
-&kp DELETE        &msc SCRL_LEFT    &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp BACKSPACE    &none  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &kp BACKSLASH
-&kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT_SHIFT   &kp CAPSLOCK     &none  &kp EQUAL         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON      &kp SINGLE_QUOTE
-&kp LEFT_CONTROL  &kp LEFT_ARROW    &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp RETURN       &none  &kp BACKSLASH     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp GRAVE          &kp RETURN
-&none             &none             &none         &none           &none            &none            &none  &kp MINUS         &kp NUMBER_0  &kp COMMA     &kp PERIOD    &none
+&none             &kp NUMBER_1    &kp NUMBER_2    &kp N3         &kp N4  &kp N5    &none  &kp N6            &kp N7        &kp N8        &kp N9        &kp N0             &kp BACKSPACE
+&kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE  &none   &none     &none  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &kp RETURN
+&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none   &none     &none  &kp EQUAL         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp SEMICOLON      &kp BACKSLASH
+&kp LEFT_CONTROL  &none           &none           &none          &none   &none     &none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp SLASH          &kp SINGLE_QUOTE
+&none             &kp LEFT_GUI    &kp LEFT_ALT    &none          &none   &none     &none  &kp SPACE         &kp MINUS     &kp N0        &kp COMMA     &kp PERIOD
             >;
 
             label = "NUM";
@@ -288,11 +310,11 @@
 
         SYM {
             bindings = <
-&none             &none             &none         &none           &none            &none        &none  &none           &none                  &none          &none                 &none            &kp BACKSPACE
-&kp DELETE        &msc SCRL_LEFT    &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp BSPC     &none  &kp LEFT_BRACE  &kp AMPERSAND          &kp ASTERISK   &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE  &kp PIPE
-&kp LEFT_SHIFT    &kp LEFT_CONTROL  &kp LEFT_GUI  &kp LEFT_ALT    &kp LEFT_SHIFT   &kp CAPS     &none  &kp PLUS        &kp DOLLAR             &kp PERCENT    &kp CARET             &kp COLON        &kp DOUBLE_QUOTES
-&kp LEFT_CONTROL  &kp LEFT_ARROW    &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &kp ENTER    &none  &kp PIPE        &kp EXCL               &kp AT         &kp HASH              &kp TILDE        &kp RETURN
-&none             &none             &none         &none           &none            &none        &none  &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp LESS_THAN  &kp GREATER_THAN      &none
+&none             &kp EXCL        &kp AT          &kp HASH         &kp DOLLAR  &kp PERCENT    &none  &kp CARET       &kp AMPERSAND   &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE    &none       &none          &none  &kp LEFT_BRACE  &kp AMPERSAND   &kp ASTERISK           &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE        &kp RETURN
+&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none          &none  &kp PLUS        &kp DOLLAR      &kp PERCENT            &kp CARET             &kp COLON              &kp PIPE
+&kp LEFT_CONTROL  &none           &none           &none            &none       &none          &none  &kp TILDE       &kp EXCL        &kp AT                 &kp HASH              &kp QUESTION           &kp DOUBLE_QUOTES
+&none             &kp LEFT_GUI    &kp LEFT_ALT    &none            &none       &none          &none  &kp SPACE       &kp UNDERSCORE  &kp RIGHT_PARENTHESIS  &kp LESS_THAN         &kp GREATER_THAN
             >;
 
             label = "SYM";
@@ -300,11 +322,11 @@
 
         FUN {
             bindings = <
-&none             &none            &none         &none           &none            &none            &none  &none  &none   &none   &none   &none    &none
-&kp DELETE        &msc SCRL_RIGHT  &msc SCRL_UP  &msc SCRL_DOWN  &msc SCRL_RIGHT  &kp BACKSPACE    &none  &none  &kp F7  &kp F8  &kp F9  &kp F10  &none
-&kp LEFT_SHIFT    &kp LCTRL        &kp LGUI      &kp LALT        &kp LSHFT        &kp CAPSLOCK     &none  &none  &kp F4  &kp F5  &kp F6  &kp F11  &none
-&kp LEFT_CONTROL  &kp LEFT_ARROW   &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT        &kp RETURN       &none  &none  &kp F1  &kp F2  &kp F3  &kp F12  &none
-&none             &none            &none         &none           &none            &none            &none  &none  &none   &none   &none   &none
+&none  &none  &none  &none  &none  &none    &none  &none  &kp F10  &kp F11  &kp F12  &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &kp F7   &kp F8   &kp F9   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &kp F4   &kp F5   &kp F6   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &kp F1   &kp F2   &kp F3   &none  &none
+&none  &none  &none  &none  &none  &none    &none  &none  &none    &none    &none    &none
             >;
 
             label = "FUN";

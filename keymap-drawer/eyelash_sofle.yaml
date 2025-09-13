@@ -49,8 +49,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - N
   - M
+  - {t: ',', s: <}
   - .
-  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -64,7 +64,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:arrow-left-bold$$
   Game:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -114,8 +114,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - N
   - M
+  - {t: ',', s: <}
   - .
-  - $$mdi:arrow-left-bold$$
   - $$mdi:arrow-down-bold$$
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -129,7 +129,7 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: FUN}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - $$mdi:arrow-left-bold$$
   Extra:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

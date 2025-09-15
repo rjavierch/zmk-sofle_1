@@ -200,11 +200,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC     &kp N1    &kp N2        &kp N3         &kp N4         &kp N5           &kp C_VOLUME_UP    &kp N6         &kp N7         &kp N8         &kp N9         &kp N0        &kp BACKSPACE
-&kp TAB     &kp Q     &kp W         &kp E          &kp R          &kp T            &kp C_VOLUME_DOWN  &kp Y          &kp U          &kp I          &kp O          &kp P         &kp RETURN
-&kp LSHIFT  &kp A     &kp S         &kp D          &kp F          &kp G            &none              &kp H          &kp J          &kp K          &kp L          &kp UP_ARROW  &kp RIGHT_SHIFT
-&kp LCTRL   &kp Z     &kp X         &kp C          &kp V          &kp B            &none              &kp N          &kp M          &kp COMMA      &kp PERIOD     &kp DOWN      &kp RIGHT
-&none       &kp LGUI  &kp LEFT_ALT  &u_lt 5 SPACE  &u_lt 8 SPACE  &u_lt 9 SPACE    &kp C_MUTE         &u_lt 9 SPACE  &u_lt 8 SPACE  &u_lt 5 SPACE  &kp RIGHT_ALT  &kp LEFT
+&kp ESC     &kp N1    &kp N2        &kp N3         &kp N4         &kp N5           &kp C_VOLUME_UP    &kp N6         &kp N7         &kp N8         &kp N9          &kp N0             &kp BACKSPACE
+&kp TAB     &kp Q     &kp W         &kp E          &kp R          &kp T            &kp C_VOLUME_DOWN  &kp Y          &kp U          &kp I          &kp O           &kp P              &kp RETURN
+&kp LSHIFT  &kp A     &kp S         &kp D          &kp F          &kp G            &none              &kp H          &kp J          &kp K          &kp L           &kp UP_ARROW       &kp RIGHT_SHIFT
+&kp LCTRL   &kp Z     &kp X         &kp C          &kp V          &kp B            &none              &kp N          &kp M          &none          &kp LEFT_ARROW  &kp DOWN           &kp RIGHT
+&none       &kp LGUI  &kp LEFT_ALT  &u_lt 5 SPACE  &u_lt 8 SPACE  &u_lt 9 SPACE    &kp C_MUTE         &u_lt 9 SPACE  &u_lt 8 SPACE  &u_lt 5 SPACE  &kp RIGHT_ALT   &kp RIGHT_CONTROL
             >;
 
             display-name = "QWERTY";
@@ -215,11 +215,11 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6       &kp N7          &kp N8         &kp N9         &kp N0          &kp BACKSPACE
-&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y        &kp U           &kp I          &kp O          &kp P           &kp RETURN
-&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H        &kp J           &kp K          &kp L          &kp UP_ARROW    &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N        &kp M           &kp COMMA      &kp PERIOD     &kp DOWN        &kp RIGHT_ARROW
-&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &lt 8 SPACE  &u_lt 10 SPACE  &u_lt 5 SPACE  &kp RIGHT_ALT  &kp LEFT_ARROW
+&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6       &kp N7          &kp N8         &kp N9          &kp N0             &kp BACKSPACE
+&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y        &kp U           &kp I          &kp O           &kp P              &kp RETURN
+&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H        &kp J           &kp K          &kp L           &kp UP_ARROW       &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N        &kp M           &none          &kp LEFT_ARROW  &kp DOWN           &kp RIGHT_ARROW
+&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &lt 8 SPACE  &u_lt 10 SPACE  &u_lt 5 SPACE  &kp RIGHT_ALT   &kp RIGHT_CONTROL
             >;
         };
 
@@ -237,11 +237,11 @@
 
         TAP {
             bindings = <
-&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &kp N6     &kp N7     &kp N8      &kp N9          &kp N0             &kp BSPC
-&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T           &none  &kp Y      &kp U      &kp I       &kp O           &kp P              &kp RETURN
-&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &none  &kp H      &kp J      &kp K       &kp L           &kp UP_ARROW       &kp RIGHT_SHIFT
-&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &none  &kp N      &kp M      &kp PERIOD  &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW
-&none       &kp LGUI      &kp LALT      &kp SPACE     &kp SPACE     &kp SPACE       &none  &kp SPACE  &kp SPACE  &kp SPACE   &kp RIGHT_ALT   &kp RIGHT_CONTROL
+&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &kp N6     &kp N7     &kp N8     &kp N9          &kp N0             &kp BSPC
+&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T           &none  &kp Y      &kp U      &kp I      &kp O           &kp P              &kp RETURN
+&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &none  &kp H      &kp J      &kp K      &kp L           &kp UP_ARROW       &kp RIGHT_SHIFT
+&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &none  &kp N      &kp M      &none      &kp LEFT_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW
+&none       &kp LGUI      &kp LALT      &kp SPACE     &kp SPACE     &kp SPACE       &none  &kp SPACE  &kp SPACE  &kp SPACE  &kp RIGHT_ALT   &kp RIGHT_CONTROL
             >;
 
             label = "TAP";

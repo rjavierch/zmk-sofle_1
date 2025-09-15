@@ -57,11 +57,11 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -577,11 +577,11 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:keyboard-space$$', type: held alternate}
-  - {t: '-', s: _, type: held alternate}
+  - _
   - {t: '0', s: )}
   - {t: ',', s: <}
   - .
@@ -642,11 +642,11 @@ layers:
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', type: held alternate}
-  - _
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - $$mdi:keyboard-space$$
+  - {t: '-', s: _, type: held alternate}
   - )
   - <
   - '>'
@@ -743,16 +743,16 @@ combos:
 - p: [59, 63]
   k: MEDIA
 - p: [55, 56]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: $$mdi:keyboard-space$$
   l: [QWERTY, Extra, TAP, Button, NAV, MOUSE, MEDIA, NUM, SYM, FUN]
 - p: [56, 57]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: $$mdi:keyboard-space$$
   l: [TAP, QWERTY, Extra, Button, NAV, MOUSE, MEDIA, NUM, SYM, FUN]
 - p: [59, 60]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: $$mdi:keyboard-space$$
   l: [QWERTY, Extra, TAP, Button, NAV, MOUSE, MEDIA, NUM, SYM, FUN]
 - p: [60, 61]
-  k: {t: '$$mdi:minus-circle-outline$$', type: none}
+  k: $$mdi:keyboard-space$$
   l: [QWERTY, Extra, TAP, Button, NAV, MOUSE, MEDIA, NUM, FUN, SYM]
 - p: [10, 11, 12, 9]
   k: POWER

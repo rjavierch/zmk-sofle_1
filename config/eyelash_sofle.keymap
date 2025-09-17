@@ -150,7 +150,7 @@
 
         Media_layer {
             bindings = <&mo 7>;
-            key-positions = <59 63>;
+            key-positions = <53 55>;
         };
 
         double_space_block {
@@ -192,6 +192,16 @@
         caps {
             bindings = <&kp CAPSLOCK>;
             key-positions = <0 13>;
+        };
+
+        comma {
+            bindings = <&kp COMMA>;
+            key-positions = <62 60>;
+        };
+
+        period {
+            bindings = <&kp PERIOD>;
+            key-positions = <60 63>;
         };
     };
 
@@ -298,11 +308,11 @@
 
         NUM {
             bindings = <
-&none             &kp NUMBER_1    &kp NUMBER_2    &kp N3         &kp N4  &kp N5    &none  &kp N6            &kp N7        &kp N8        &kp N9        &kp N0             &kp BACKSPACE
-&kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE  &none   &none     &none  &kp LEFT_BRACKET  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp RIGHT_BRACKET  &kp RETURN
-&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none   &none     &none  &kp EQUAL         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COLON          &kp BACKSLASH
-&kp LEFT_CONTROL  &none           &none           &none          &none   &none     &none  &kp GRAVE         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION       &kp SINGLE_QUOTE
-&none             &kp LEFT_GUI    &kp LEFT_ALT    &none          &none   &none     &none  &kp UNDERSCORE    &kp MINUS     &kp N0        &kp COMMA     &kp PERIOD
+&none             &kp NUMBER_1    &kp NUMBER_2    &kp N3         &kp N4  &kp N5    &none  &kp N6          &kp N7        &kp N8        &kp N9        &kp N0            &kp BACKSPACE
+&kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE  &none   &none     &none  &kp EQUAL       &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT      &none   &none     &none  &kp PLUS        &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp COLON         &kp DOUBLE_QUOTES
+&kp LEFT_CONTROL  &none           &none           &none          &none   &none     &none  &kp GRAVE       &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp QUESTION      &kp SINGLE_QUOTE
+&none             &kp LEFT_GUI    &kp LEFT_ALT    &none          &none   &none     &none  &kp UNDERSCORE  &kp MINUS     &kp N0        &kp COMMA     &kp PERIOD
             >;
 
             label = "NUM";
@@ -310,11 +320,11 @@
 
         SYM {
             bindings = <
-&none             &kp EXCL        &kp AT          &kp HASH         &kp DOLLAR  &kp PERCENT    &none  &kp CARET             &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
-&kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE    &none       &none          &none  &kp LEFT_BRACE        &kp AMPERSAND          &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_BRACE        &kp RETURN
-&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none          &none  &kp PLUS              &kp DOLLAR             &kp PERCENT   &kp CARET             &kp SEMI               &kp PIPE
-&kp LEFT_CONTROL  &none           &none           &none            &none       &none          &none  &kp TILDE             &kp EXCL               &kp AT        &kp HASH              &kp SLASH              &kp DOUBLE_QUOTES
-&none             &kp LEFT_GUI    &kp LEFT_ALT    &none            &none       &none          &none  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &none         &kp LESS_THAN         &kp GREATER_THAN
+&none             &kp EXCL        &kp AT          &kp HASH         &kp DOLLAR  &kp PERCENT    &none  &kp CARET              &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
+&kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE    &none       &none          &none  &kp LEFT_PARENTHESIS   &kp AMPERSAND  &kp ASTERISK  &kp LEFT_PARENTHESIS  &kp LEFT_BRACE         &kp RIGHT_BRACE
+&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none          &none  &kp RIGHT_PARENTHESIS  &kp DOLLAR     &kp PERCENT   &kp CARET             &kp SEMI               &kp PIPE
+&kp LEFT_CONTROL  &none           &none           &none            &none       &none          &none  &kp TILDE              &kp EXCL       &kp AT        &kp HASH              &kp SLASH              &kp BACKSLASH
+&none             &kp LEFT_GUI    &kp LEFT_ALT    &none            &none       &none          &none  &kp UNDERSCORE         &kp MINUS      &none         &kp LESS_THAN         &kp GREATER_THAN
             >;
 
             label = "SYM";

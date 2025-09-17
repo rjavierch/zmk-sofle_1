@@ -57,11 +57,11 @@ layers:
   - LGUI
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
+  - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
   - $$mdi:apple-keyboard-option$$
   - $$mdi:apple-keyboard-control$$
@@ -558,7 +558,7 @@ layers:
   - '4'
   - '5'
   - '6'
-  - {t: ;, s: ':'}
+  - ':'
   - {t: \, s: '|'}
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -571,17 +571,17 @@ layers:
   - '1'
   - '2'
   - '3'
-  - {t: /, s: '?'}
+  - '?'
   - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', type: held alternate}
-  - _
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: _, type: held alternate}
+  - {t: '-', s: _, type: held alternate}
   - {t: '0', s: )}
   - {t: ',', s: <}
   - .
@@ -623,7 +623,7 @@ layers:
   - $
   - '%'
   - ^
-  - ':'
+  - {t: ;, s: ':'}
   - '|'
   - $$mdi:apple-keyboard-control$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -636,18 +636,18 @@ layers:
   - '!'
   - '@'
   - '#'
-  - '?'
+  - {t: /, s: '?'}
   - '"'
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:apple-keyboard-command$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:keyboard-space$$
-  - {t: '-', s: _, type: held alternate}
+  - {t: (, type: held alternate}
   - )
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - <
   - '>'
   FUN:

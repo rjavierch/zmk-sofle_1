@@ -38,7 +38,7 @@ layers:
   - J
   - K
   - L
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:arrow-up-bold$$', s: ':'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -50,9 +50,9 @@ layers:
   - N
   - M
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:arrow-left-bold$$', s: '`'}
+  - {t: '$$mdi:arrow-down-bold$$', s: '?'}
+  - {t: '$$mdi:arrow-right-bold$$', s: ''''}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
   - $$mdi:apple-keyboard-option$$
@@ -60,11 +60,11 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: NUM}
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM, s: _}
+  - {t: '$$mdi:keyboard-space$$', h: NUM, s: '-'}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   Game:
   - $$mdi:keyboard-esc$$
   - {t: '1', s: '!'}
@@ -103,7 +103,7 @@ layers:
   - J
   - K
   - L
-  - $$mdi:arrow-up-bold$$
+  - {t: '$$mdi:arrow-up-bold$$', s: ':'}
   - $$mdi:apple-keyboard-shift$$
   - $$mdi:apple-keyboard-control$$
   - Z
@@ -115,9 +115,9 @@ layers:
   - N
   - M
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - $$mdi:arrow-left-bold$$
-  - $$mdi:arrow-down-bold$$
-  - $$mdi:arrow-right-bold$$
+  - {t: '$$mdi:arrow-left-bold$$', s: '`'}
+  - {t: '$$mdi:arrow-down-bold$$', s: '?'}
+  - {t: '$$mdi:arrow-right-bold$$', s: ''''}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '6'
   - '7'
@@ -125,11 +125,11 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
-  - {t: '$$mdi:keyboard-space$$', h: NUM}
+  - {t: '$$mdi:keyboard-space$$', h: SYM, s: _}
+  - {t: '$$mdi:keyboard-space$$', h: NUM, s: '-'}
   - {t: '$$mdi:keyboard-space$$', h: NAV}
-  - $$mdi:apple-keyboard-option$$
-  - $$mdi:apple-keyboard-control$$
+  - {t: ',', h: '$$mdi:apple-keyboard-option$$', s: <}
+  - {t: ., h: '$$mdi:apple-keyboard-control$$'}
   Extra:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -541,10 +541,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '=', s: +}
   - '7'
   - '8'
-  - '9'
+  - {t: '9', s: (}
+  - {t: '=', s: +}
   - {t: '[', s: '{'}
   - {t: ']', s: '}'}
   - $$mdi:apple-keyboard-shift$$
@@ -554,10 +554,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - +
   - '4'
-  - '5'
+  - {t: '5', s: '%'}
   - '6'
+  - +
   - ':'
   - '"'
   - $$mdi:apple-keyboard-control$$
@@ -567,10 +567,10 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '`', s: '~'}
   - '1'
   - '2'
   - '3'
+  - {t: '`', s: '~'}
   - '?'
   - {t: '''', s: '"'}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -762,7 +762,3 @@ combos:
   l: [QWERTY, Extra, TAP, Button, NAV, MOUSE, MEDIA, NUM, SYM, FUN]
 - p: [0, 13]
   k: $$mdi:apple-keyboard-caps$$
-- p: [62, 60]
-  k: {t: ',', s: <}
-- p: [60, 63]
-  k: .

@@ -318,7 +318,7 @@
 &none             &none            &none              &none            &none          &none            &kp UP_ARROW  &none  &none  &none  &none  &none  &none
 &none             &kp DELETE       &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)     &kp LS(LC(T))    &kp DOWN      &none  &none  &none  &none  &none  &none
 &kp LEFT_SHIFT    &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(PLUS)   &none            &kp LEFT      &none  &none  &none  &none  &none  &none
-&kp LEFT_CONTROL  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(C)        &kp LC(MINUS)  &none            &kp RIGHT     &none  &none  &none  &none  &none  &none
+&kp LEFT_CONTROL  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(MINUS)  &none            &kp RIGHT     &none  &none  &none  &none  &none  &none
 &none             &kp LEFT_WIN     &kp LEFT_ALT       &none            &none          &none            &kp LC(V)     &none  &none  &none  &none  &none
             >;
 

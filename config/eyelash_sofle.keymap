@@ -254,11 +254,11 @@
 
         QWERTY {
             bindings = <
-&kp ESC     &kp N1    &kp N2        &kp N3         &kp N4         &kp N5           &kp C_VOLUME_UP    &kp N6          &kp N7     &kp N8         &kp N9               &kp N0                    &kp BACKSPACE
-&kp TAB     &kp Q     &kp W         &kp E          &kp R          &kp T            &kp C_VOLUME_DOWN  &kp Y           &kp U      &kp I          &kp O                &kp P                     &kp RETURN
-&kp LSHIFT  &kp A     &kp S         &kp D          &kp F          &kp G            &none              &kp H           &kp J      &kp K          &kp L                &upcolon                  &kp RIGHT_SHIFT
-&kp LCTRL   &kp Z     &kp X         &kp C          &kp V          &kp B            &none              &kp N           &kp M      &none          &leftgrave           &downquestion             &rightquote
-&none       &kp LGUI  &kp LEFT_ALT  &u_lt 5 SPACE  &u_lt 8 SPACE  &u_lt 9 SPACE    &kp C_MUTE         &symunderscore  &numminus  &u_lt 5 SPACE  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL PERIOD
+&kp ESC     &kp N1    &kp N2        &kp N3         &kp N4         &kp N5           &kp C_VOLUME_UP    &kp N6          &kp N7     &kp N8         &kp N9                 &kp N0                      &kp BACKSPACE
+&kp TAB     &kp Q     &kp W         &kp E          &kp R          &kp T            &kp C_VOLUME_DOWN  &kp Y           &kp U      &kp I          &kp O                  &kp P                       &kp RETURN
+&kp LSHIFT  &kp A     &kp S         &kp D          &kp F          &kp G            &none              &kp H           &kp J      &kp K          &kp L                  &upcolon                    &kp RIGHT_SHIFT
+&kp LCTRL   &kp Z     &kp X         &kp C          &kp V          &kp B            &none              &kp N           &kp M      &none          &leftgrave             &downquestion               &rightquote
+&none       &kp LGUI  &kp LEFT_ALT  &u_lt 5 SPACE  &u_lt 8 SPACE  &u_lt 9 SPACE    &kp C_MUTE         &symunderscore  &numminus  &u_lt 5 SPACE  &u_mt RIGHT_ALT COMMA  &u_mt RIGHT_CONTROL PERIOD
             >;
 
             display-name = "QWERTY";
@@ -269,11 +269,11 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6          &kp N7     &kp N8         &kp N9               &kp N0                    &kp BACKSPACE
-&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y           &kp U      &kp I          &kp O                &kp P                     &kp RETURN
-&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H           &kp J      &kp K          &kp L                &upcolon                  &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N           &kp M      &none          &leftgrave           &downquestion             &rightquote
-&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &symunderscore  &numminus  &u_lt 5 SPACE  &mt RIGHT_ALT COMMA  &mt RIGHT_CONTROL PERIOD
+&kp ESC           &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6          &kp N7     &kp N8         &kp N9                 &kp N0                      &kp BACKSPACE
+&kp TAB           &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y           &kp U      &kp I          &kp O                  &kp P                       &kp RETURN
+&kp LEFT_SHIFT    &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H           &kp J      &kp K          &kp L                  &upcolon                    &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N           &kp M      &none          &leftgrave             &downquestion               &rightquote
+&none             &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &symunderscore  &numminus  &u_lt 5 SPACE  &u_mt RIGHT_ALT COMMA  &u_mt RIGHT_CONTROL PERIOD
             >;
         };
 

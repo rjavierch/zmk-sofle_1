@@ -368,7 +368,7 @@ layers:
   - $$mdi:apple-keyboard-control$$
   - Ctl+PgUp
   - Ctl+PgDn
-  - Ctl+C
+  - Ctl+W
   - {t: Ctl+-, s: Ctl+_}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:arrow-right-bold$$

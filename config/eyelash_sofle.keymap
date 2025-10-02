@@ -126,10 +126,10 @@
         mods = <(MOD_RSFT)>;
     };
 
-    nav_minus: nav_minus {
+    SYM_minus: SYM_minus {
         compatible = "zmk,behavior-mod-morph";
-        label = "NAV_MINUS";
-        bindings = <&lt 5 SPACE>, <&kp MINUS>;
+        label = "SYM_MINUS";
+        bindings = <&lt 9 SPACE>, <&kp MINUS>;
 
         #binding-cells = <0>;
         mods = <(MOD_RSFT)>;
@@ -289,11 +289,11 @@
 
         QWERTY {
             bindings = <
-&esc_or_tilde_on_alt  &kp N1    &kp N2        &kp N3         &kp N4         &kp N5       &kp C_VOLUME_UP    &kp N6         &kp N7             &kp N8      &kp N9         &kp N0           &kp BACKSPACE
-&kp TAB               &kp Q     &kp W         &kp E          &kp R          &kp T        &kp C_VOLUME_DOWN  &kp Y          &kp U              &kp I       &kp O          &kp P            &kp RETURN
-&kp LSHIFT            &kp A     &kp S         &kp D          &kp F          &kp G        &none              &kp H          &kp J              &kp K       &kp L          &upcolon         &kp RIGHT_SHIFT
-&kp LCTRL             &kp Z     &kp X         &kp C          &kp V          &kp B        &none              &kp N          &kp M              &kp COMMA   &kp PERIOD     &down_backslash  &rightquote
-&none                 &kp LGUI  &kp LEFT_ALT  &u_lt 5 SPACE  &u_lt 9 SPACE  &kp SPACE    &kp C_MUTE         &u_lt 9 SPACE  &space_underscore  &nav_minus  &kp RIGHT_ALT  &kp LEFT_ARROW
+&esc_or_tilde_on_alt  &kp N1    &kp N2        &kp N3         &kp N4         &kp N5       &kp C_VOLUME_UP    &kp N6             &kp N7      &kp N8         &kp N9      &kp N0           &kp BACKSPACE
+&kp TAB               &kp Q     &kp W         &kp E          &kp R          &kp T        &kp C_VOLUME_DOWN  &kp Y              &kp U       &kp I          &kp O       &kp P            &kp RETURN
+&kp LSHIFT            &kp A     &kp S         &kp D          &kp F          &kp G        &none              &kp H              &kp J       &kp K          &kp L       &upcolon         &kp RIGHT_SHIFT
+&kp LCTRL             &kp Z     &kp X         &kp C          &kp V          &kp B        &none              &kp N              &kp M       &kp COMMA      &kp PERIOD  &down_backslash  &rightquote
+&none                 &kp LGUI  &kp LEFT_ALT  &u_lt 5 SPACE  &u_lt 9 SPACE  &kp SPACE    &kp C_MUTE         &space_underscore  &SYM_minus  &kp RIGHT_ALT  &kp RCTRL   &kp LEFT_ARROW
             >;
 
             display-name = "QWERTY";
@@ -304,11 +304,11 @@
             label = "Game";
             display-name = "Game";
             bindings = <
-&esc_or_tilde_on_alt  &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6         &kp N7             &kp N8      &kp N9         &kp N0           &kp BACKSPACE
-&kp TAB               &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y          &kp U              &kp I       &kp O          &kp P            &kp RETURN
-&kp LEFT_SHIFT        &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H          &kp J              &kp K       &kp L          &upcolon         &kp RIGHT_SHIFT
-&kp LEFT_CONTROL      &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N          &kp M              &kp COMMA   &kp PERIOD     &down_backslash  &rightquote
-&none                 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &u_lt 9 SPACE  &space_underscore  &nav_minus  &kp RIGHT_ALT  &kp LEFT_ARROW
+&esc_or_tilde_on_alt  &kp N1        &kp N2        &kp N3        &kp N4     &kp N5          &none  &kp N6             &kp N7      &kp N8         &kp N9             &kp N0           &kp BACKSPACE
+&kp TAB               &kp Q         &kp W         &kp E         &kp R      &kp T           &none  &kp Y              &kp U       &kp I          &kp O              &kp P            &kp RETURN
+&kp LEFT_SHIFT        &kp A         &kp S         &kp D         &kp F      &kp G           &none  &kp H              &kp J       &kp K          &kp L              &upcolon         &kp RIGHT_SHIFT
+&kp LEFT_CONTROL      &kp Z         &kp X         &kp C         &kp V      &kp B           &none  &kp N              &kp M       &kp COMMA      &kp PERIOD         &down_backslash  &rightquote
+&none                 &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp SPACE  &kp LEFT_ALT    &none  &space_underscore  &SYM_minus  &kp RIGHT_ALT  &kp RIGHT_CONTROL  &kp LEFT_ARROW
             >;
         };
 
@@ -326,11 +326,11 @@
 
         TAP {
             bindings = <
-&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &kp N6     &kp N7     &kp N8     &kp N9         &kp N0          &kp BSPC
-&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T           &none  &kp Y      &kp U      &kp I      &kp O          &kp P           &kp RETURN
-&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &none  &kp H      &kp J      &kp K      &kp L          &kp UP_ARROW    &kp RIGHT_SHIFT
-&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &none  &kp N      &kp M      &kp COMMA  &kp PERIOD     &kp DOWN_ARROW  &kp RIGHT_ARROW
-&none       &kp LGUI      &kp LALT      &kp SPACE     &kp SPACE     &kp SPACE       &none  &kp SPACE  &kp SPACE  &kp SPACE  &kp RIGHT_ALT  &kp LEFT_ARROW
+&kp ESC     &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &none  &kp N6     &kp N7     &kp N8         &kp N9      &kp N0          &kp BSPC
+&kp TAB     &kp Q         &kp W         &kp E         &kp R         &kp T           &none  &kp Y      &kp U      &kp I          &kp O       &kp P           &kp RETURN
+&kp LSHIFT  &kp A         &kp S         &kp D         &kp F         &kp G           &none  &kp H      &kp J      &kp K          &kp L       &kp UP_ARROW    &kp RIGHT_SHIFT
+&kp LCTRL   &kp Z         &kp X         &kp C         &kp V         &kp B           &none  &kp N      &kp M      &kp COMMA      &kp PERIOD  &kp DOWN_ARROW  &kp RIGHT_ARROW
+&none       &kp LGUI      &kp LALT      &kp SPACE     &kp SPACE     &kp SPACE       &none  &kp SPACE  &kp SPACE  &kp RIGHT_ALT  &kp RCTRL   &kp LEFT_ARROW
             >;
 
             label = "TAP";
@@ -403,7 +403,7 @@
 &kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE    &none       &none          &none  &kp LEFT_BRACKET   &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH          &kp PIPE
 &kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none          &none  &kp DOUBLE_QUOTES  &kp EQUAL          &kp LESS_THAN   &kp GREATER_THAN      &kp COLON              &kp SEMICOLON
 &kp LEFT_CONTROL  &none           &none           &none            &none       &none          &none  &kp SINGLE_QUOTE   &kp PLUS           &kp COMMA       &kp PERIOD            &kp QUESTION           &kp SLASH
-&none             &kp LEFT_GUI    &kp LEFT_ALT    &none            &none       &none          &none  &kp SPACE          &kp UNDER          &kp MINUS       &kp LESS_THAN         &kp GREATER_THAN
+&none             &kp LEFT_GUI    &kp LEFT_ALT    &none            &none       &none          &none  &kp UNDERSCORE     &kp MINUS          &none           &kp LESS_THAN         &kp GREATER_THAN
             >;
 
             label = "SYM";

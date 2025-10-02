@@ -463,8 +463,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - OUT USB
+  - OUT BLE
   - RGB HUI
   - RGB SAI
   - RGB BRI
@@ -619,8 +619,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - '"'
   - {t: '=', s: +}
+  - '"'
   - <
   - '>'
   - ':'
@@ -632,8 +632,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '''', s: '"'}
   - +
+  - {t: '''', s: '"'}
   - {t: ',', s: <}
   - .
   - '?'
@@ -647,9 +647,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - _
   - {t: '-', s: _, type: held alternate}
+  - $$mdi:keyboard-space$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - <
-  - '>'
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   FUN:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - F1

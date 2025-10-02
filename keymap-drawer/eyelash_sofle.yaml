@@ -60,10 +60,10 @@ layers:
   - {t: '$$mdi:keyboard-space$$', h: SYM}
   - $$mdi:keyboard-space$$
   - $$mdi:volume-off$$
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-space$$', s: _}
-  - {t: '$$mdi:keyboard-space$$', h: NAV, s: '-'}
+  - {t: '$$mdi:keyboard-space$$', h: SYM, s: '-'}
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-left-bold$$
   Game:
   - {t: '$$mdi:keyboard-esc$$', s: '~'}
@@ -125,10 +125,10 @@ layers:
   - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', h: SYM}
   - {t: '$$mdi:keyboard-space$$', s: _}
-  - {t: '$$mdi:keyboard-space$$', h: NAV, s: '-'}
+  - {t: '$$mdi:keyboard-space$$', h: SYM, s: '-'}
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-left-bold$$
   Extra:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -257,8 +257,8 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - $$mdi:keyboard-space$$
   - $$mdi:keyboard-space$$
-  - $$mdi:keyboard-space$$
   - $$mdi:apple-keyboard-option$$
+  - $$mdi:apple-keyboard-control$$
   - $$mdi:arrow-left-bold$$
   Button:
   - {t: '$$mdi:minus-circle-outline$$', type: none}
@@ -387,7 +387,7 @@ layers:
   - Ctl+V
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:minus-circle-outline$$', type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   MOUSE:
@@ -645,9 +645,9 @@ layers:
   - {t: '$$mdi:minus-circle-outline$$', type: held}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}
-  - {t: '$$mdi:keyboard-space$$', type: held alternate}
   - _
-  - {t: '-', s: _}
+  - {t: '-', s: _, type: held alternate}
+  - {t: '$$mdi:minus-circle-outline$$', type: none}
   - <
   - '>'
   FUN:

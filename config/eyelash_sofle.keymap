@@ -221,12 +221,6 @@
             timeout-ms = <200>;
         };
 
-        combo_forward {
-            bindings = <&kp C_NEXT>;
-            key-positions = <>;
-            timeout-ms = <200>;
-        };
-
         FN_layer {
             bindings = <&mo 10>;
             key-positions = <55 54>;

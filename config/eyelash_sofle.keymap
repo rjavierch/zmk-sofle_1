@@ -177,19 +177,19 @@
 
         combo_volup {
             bindings = <&kp C_VOLUME_UP>;
-            key-positions = <1 3>;
+            key-positions = <0 2>;
             timeout-ms = <200>;
         };
 
         combo_voldn {
             bindings = <&kp C_VOL_DN>;
-            key-positions = <0 2>;
+            key-positions = <0 1>;
             timeout-ms = <200>;
         };
 
         combo_mute {
             bindings = <&kp C_MUTE>;
-            key-positions = <2 4>;
+            key-positions = <0 4>;
             timeout-ms = <200>;
         };
 
@@ -211,19 +211,19 @@
 
         combo_playpause {
             bindings = <&kp C_PLAY_PAUSE>;
-            key-positions = <3 5>;
+            key-positions = <0 3>;
             timeout-ms = <200>;
         };
 
-        combo_prev {
-            bindings = <&kp C_PREV>;
-            key-positions = <0 1 2>;
+        combo_pause {
+            bindings = <&kp C_PLAY_PAUSE>;
+            key-positions = <12 9>;
             timeout-ms = <200>;
         };
 
         combo_forward {
             bindings = <&kp C_NEXT>;
-            key-positions = <3 4 5>;
+            key-positions = <>;
             timeout-ms = <200>;
         };
 
@@ -280,7 +280,7 @@
 
         gamegui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <0 5>;
+            key-positions = <53 55>;
             layers = <1>;
             timeout-ms = <300>;
         };
@@ -352,11 +352,11 @@
 
         NAV {
             bindings = <
-&none             &kp F1           &kp F2             &kp F3           &kp F4         &kp F5           &kp UP_ARROW  &kp F6  &kt F7  &kp F8  &kp F9  &kp F10  &kp DELETE
-&none             &kp DELETE       &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)     &kp LS(LC(T))    &kp DOWN      &none   &none   &none   &none   &kp F11  &kp F12
-&kp LEFT_SHIFT    &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(PLUS)   &none            &kp LEFT      &none   &none   &none   &none   &none    &none
-&kp LEFT_CONTROL  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(MINUS)  &none            &kp RIGHT     &none   &none   &none   &none   &none    &none
-&none             &kp LEFT_WIN     &kp LEFT_ALT       &none            &none          &none            &kp LC(V)     &none   &none   &none   &none   &none
+&none             &kp F1           &kp F2             &kp F3           &kp F4         &kp F5           &kp UP_ARROW  &kp F6   &kt F7   &kp F8  &kp F9  &kp F10  &kp DELETE
+&kp CAPS          &kp DELETE       &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)     &kp LS(LC(T))    &kp DOWN      &kp F11  &kp F12  &none   &none   &none    &none
+&kp LEFT_SHIFT    &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(PLUS)   &none            &kp LEFT      &none    &none    &none   &none   &none    &none
+&kp LEFT_CONTROL  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(MINUS)  &none            &kp RIGHT     &none    &none    &none   &none   &none    &none
+&none             &kp LEFT_WIN     &kp LEFT_ALT       &none            &none          &none            &kp LC(V)     &none    &none    &none   &none   &none
             >;
 
             display-name = "NAV";
@@ -377,9 +377,9 @@
 
         MEDIA {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &out OUT_USB     &out OUT_BLE     &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI
+&none  &none  &none  &none  &none  &none    &none  &none            &none            &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_BRI  &rgb_ug RGB_SPI
 &none  &none  &none  &none  &none  &none    &none  &rgb_ug RGB_TOG  &rgb_ug RGB_EFF  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_BRD  &rgb_ug RGB_SPD
-&none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &none            &none            &bt BT_CLR
+&none  &none  &none  &none  &none  &none    &none  &out OUT_USB     &out OUT_BLE     &none            &none            &none            &bt BT_CLR
 &none  &none  &none  &none  &none  &none    &none  &bt BT_SEL 0     &bt BT_SEL 1     &bt BT_SEL 2     &bt BT_SEL 3     &bt BT_SEL 4     &none
 &none  &none  &none  &none  &none  &none    &none  &none            &none            &none            &trans           &none
             >;
@@ -403,8 +403,8 @@
             bindings = <
 &kp GRAVE         &kp EXCL        &kp AT          &kp POUND        &kp DOLLAR  &kp PERCENT    &none  &kp CARET         &kp AMPERSAND      &kp ASTERISK    &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp BACKSPACE
 &kp TAB           &kp DELETE      &kp UP_ARROW    &kp BACKSPACE    &none       &none          &none  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE  &kp RIGHT_BRACE       &kp BACKSLASH          &kp PIPE
-&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none          &none  &kp EQUAL         &kp DOUBLE_QUOTES  &kp LESS_THAN   &kp GREATER_THAN      &kp COLON              &kp SEMICOLON
-&kp LEFT_CONTROL  &none           &none           &none            &none       &none          &none  &kp PLUS          &kp APOSTROPHE     &kp COMMA       &kp PERIOD            &kp QUESTION           &kp SLASH
+&kp LEFT_SHIFT    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none       &none          &none  &kp EQUAL         &kp DOUBLE_QUOTES  &kp TILDE       &kp GREATER_THAN      &kp COLON              &kp SEMICOLON
+&kp LEFT_CONTROL  &none           &none           &none            &none       &none          &none  &kp PLUS          &kp APOSTROPHE     &kp GRAVE       &kp PERIOD            &kp QUESTION           &kp SLASH
 &none             &kp LEFT_GUI    &kp LEFT_ALT    &none            &none       &none          &none  &kp UNDERSCORE    &kp MINUS          &kp SPACE       &none                 &none
             >;
 

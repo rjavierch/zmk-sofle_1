@@ -761,6 +761,6 @@ combos:
   l: [QWERTY, Extra, TAP, Button, NAV, MOUSE, MEDIA, NUM, SYM, FUN]
 - p: [26, 0]
   k: $$mdi:apple-keyboard-caps$$
-- p: [53, 55]
+- p: [0, 5]
   k: $$mdi:apple-keyboard-command$$
   l: [Game]

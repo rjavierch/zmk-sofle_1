@@ -277,7 +277,7 @@
 
         gamegui {
             bindings = <&kp LEFT_GUI>;
-            key-positions = <53 55>;
+            key-positions = <0 5>;
             layers = <1>;
             timeout-ms = <300>;
         };

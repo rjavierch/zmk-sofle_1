@@ -736,9 +736,6 @@ combos:
 - p: [60, 61]
   k: $$mdi:keyboard-space$$
   l: [QWERTY, Extra, TAP, Button, NAV, MOUSE, MEDIA, NUM, FUN, SYM]
-- p: [10, 11, 12, 9]
-  k: POWER
-  l: [NAV]
 - p: [61, 62]
   k: FUN
   l: [QWERTY, Extra, TAP, Button, NAV, MOUSE, MEDIA, NUM, SYM, FUN]

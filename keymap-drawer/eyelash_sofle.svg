@@ -2552,17 +2552,11 @@ rect.held, rect.combo.held {
 <use href="#mdi:keyboard-space" xlink:href="#mdi:keyboard-space" x="632" y="262" height="18" width="18.0" class="combo tap glyph mdi:keyboard-space"/>
 </g>
 <g class="combo combopos-8">
-<path d="M812,44 l66,10" class="combo"/>
-<path d="M812,44 l-66,-12" class="combo"/>
-<rect rx="6" ry="6" x="798" y="31" width="28" height="26" class="combo"/>
-<text x="812" y="44" class="combo tap">POWER</text>
-</g>
-<g class="combo combopos-9">
 <rect rx="6" ry="6" x="686" y="242" width="28" height="26" class="combo"/>
 <a href="#FUN">
 <text x="700" y="256" class="combo tap layer-activator">FUN</text>
 </a></g>
-<g class="combo combopos-10">
+<g class="combo combopos-9">
 <rect rx="6" ry="6" x="14" y="71" width="28" height="26" class="combo"/>
 <use href="#mdi:apple-keyboard-caps" xlink:href="#mdi:apple-keyboard-caps" x="19" y="75" height="18" width="18.0" class="combo tap glyph mdi:apple-keyboard-caps"/>
 </g>

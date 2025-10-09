@@ -214,12 +214,6 @@
             layers = <0 2 3 4 5 6 7 8 10 9>;
         };
 
-        turn_off_pc {
-            bindings = <&kp K_POWER>;
-            key-positions = <10 11 12 9>;
-            layers = <5>;
-        };
-
         Fun_layer {
             bindings = <&mo 10>;
             key-positions = <61 62>;

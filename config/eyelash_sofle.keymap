@@ -58,7 +58,7 @@
 
         #binding-cells = <2>;
         tapping-term-ms = <200>;
-        flavor = "tap-preferred";
+        flavor = "balanced";
     };
 
     u_lt: u_lt {
@@ -67,17 +67,7 @@
         bindings = <&mo>, <&kp>;
 
         #binding-cells = <2>;
-        flavor = "tap-preferred";
-        tapping-term-ms = <200>;
-    };
-
-    mod_tap_dance: mod_tap_dance {
-        compatible = "zmk,behavior-hold-tap";
-        label = "MOD_TAP_DANCE";
-        bindings = <&kp>, <&tpd_layers>;
-
-        #binding-cells = <2>;
-        flavor = "tap-preferred";
+        flavor = "balanced";
         tapping-term-ms = <200>;
     };
 
@@ -108,15 +98,6 @@
         mods = <(MOD_RSFT)>;
     };
 
-    leftgrave: leftgrave {
-        compatible = "zmk,behavior-mod-morph";
-        label = "LEFTGRAVE";
-        bindings = <&kp LEFT>, <&kp GRAVE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_RSFT)>;
-    };
-
     space_underscore: space_underscore {
         compatible = "zmk,behavior-mod-morph";
         label = "SPACE_UNDERSCORE";
@@ -133,24 +114,6 @@
 
         #binding-cells = <0>;
         mods = <(MOD_RSFT)>;
-    };
-
-    esc_or_grave_on_shift: esc_or_grave_on_shift {
-        compatible = "zmk,behavior-mod-morph";
-        label = "ESC_OR_GRAVE_ON_SHIFT";
-        bindings = <&kp ESCAPE>, <&kp GRAVE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_RSFT)>;
-    };
-
-    esc_or_tilde_on_alt: esc_or_tilde_on_alt {
-        compatible = "zmk,behavior-mod-morph";
-        label = "ESC_OR_TILDE_ON_ALT";
-        bindings = <&esc_or_grave_on_shift>, <&kp TILDE>;
-
-        #binding-cells = <0>;
-        mods = <(MOD_RALT)>;
     };
 
     down_backslash: down_backslash {

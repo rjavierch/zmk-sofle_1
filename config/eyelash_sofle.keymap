@@ -122,7 +122,7 @@
         bindings = <&downquestion>, <&kp SLASH>;
 
         #binding-cells = <0>;
-        mods = <(MOD_LCTL)>;
+        mods = <(MOD_RCTL)>;
         keep-mods = <(MOD_LCTL)>;
     };
 

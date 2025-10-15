@@ -51,7 +51,7 @@ layers:
   - M
   - {t: ',', s: <}
   - .
-  - {t: '$$mdi:arrow-down-bold$$', s: /}
+  - {t: '$$mdi:arrow-down-bold$$', s: Ctl+/}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - LGUI
@@ -116,7 +116,7 @@ layers:
   - M
   - {t: ',', s: <}
   - .
-  - {t: '$$mdi:arrow-down-bold$$', s: /}
+  - {t: '$$mdi:arrow-down-bold$$', s: Ctl+/}
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - '6'

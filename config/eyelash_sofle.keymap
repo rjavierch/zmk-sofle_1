@@ -119,11 +119,10 @@
     down_backslash: down_backslash {
         compatible = "zmk,behavior-mod-morph";
         label = "DOWN_BACKSLASH";
-        bindings = <&downquestion>, <&kp SLASH>;
+        bindings = <&downquestion>, <&kp LC(SLASH)>;
 
         #binding-cells = <0>;
         mods = <(MOD_RCTL)>;
-        keep-mods = <(MOD_LCTL)>;
     };
 
     behaviors {

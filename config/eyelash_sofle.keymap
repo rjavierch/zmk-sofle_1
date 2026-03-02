@@ -263,9 +263,9 @@
         NAV {
             bindings = <
 &none             &kp F1           &kp F2             &kp F3           &kp F4         &kp F5           &kp UP_ARROW  &kp F6   &kt F7   &kp F8  &kp F9  &kp F10  &kp DELETE
-&kp CAPS          &kp DELETE       &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)     &kp LS(LC(T))    &kp DOWN      &kp F11  &kp F12  &none   &none   &none    &none
+&kp TAB           &kp DELETE       &msc SCRL_UP       &kp BACKSPACE    &kp LC(N0)     &kp LS(LC(T))    &kp DOWN      &kp F11  &kp F12  &none   &none   &none    &none
 &kp LEFT_SHIFT    &msc SCRL_LEFT   &msc SCRL_DOWN     &msc SCRL_RIGHT  &kp LC(PLUS)   &none            &kp LEFT      &none    &none    &none   &none   &none    &none
-&kp LEFT_CONTROL  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(MINUS)  &none            &kp RIGHT     &none    &none    &none   &none   &none    &none
+&kp LEFT_CONTROL  &kp LC(PAGE_UP)  &kp LC(PAGE_DOWN)  &kp LC(W)        &kp LC(MINUS)  &kp F12          &kp RIGHT     &none    &none    &none   &none   &none    &none
 &none             &kp LEFT_WIN     &kp LEFT_ALT       &none            &none          &none            &kp LC(V)     &none    &none    &none   &none   &none
             >;
 

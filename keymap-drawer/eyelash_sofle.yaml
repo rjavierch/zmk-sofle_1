@@ -339,7 +339,7 @@ layers:
   - F9
   - F10
   - $$mdi:backspace-reverse-outline$$
-  - $$mdi:apple-keyboard-caps$$
+  - $$mdi:keyboard-tab$$
   - $$mdi:backspace-reverse-outline$$
   - $$mdi:pan-up$$
   - {t: '$$mdi:backspace$$', type: backspace}
@@ -370,7 +370,7 @@ layers:
   - Ctl+PgDn
   - Ctl+W
   - {t: Ctl+-, s: Ctl+_}
-  - {t: '$$mdi:minus-circle-outline$$', type: none}
+  - F12
   - $$mdi:arrow-right-bold$$
   - {t: '$$mdi:minus-circle-outline$$', type: none}
   - {t: '$$mdi:minus-circle-outline$$', type: none}

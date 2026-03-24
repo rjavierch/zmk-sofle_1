@@ -33,7 +33,7 @@ layers:
   - D
   - F
   - G
-  - PREVIOUS
+  - $$mdi:skip-previous$$
   - H
   - J
   - K
